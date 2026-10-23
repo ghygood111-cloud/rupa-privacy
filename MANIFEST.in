@@ -1,0 +1,48 @@
+include README.md
+include CHANGELOG.md
+include CITATION.cff
+include CONTRIBUTING.md
+include RELEASE_BLOCKERS.md
+include RELEASE_CHECKLIST.md
+include pyproject.toml
+include LICENSE
+include THIRD_PARTY_NOTICES.md
+include .gitattributes
+recursive-include configs *.yaml
+recursive-include docs *.md
+exclude docs/release_verification_20261023.md
+recursive-include examples *.csv *.md *.py *.yaml
+include examples/ontario_registration/provenance.json
+recursive-include demo *.bat *.md *.py *.txt
+include demo/assets/hazardous_waste_requirements.json
+recursive-include packaging/windows *.py *.spec *.ps1 *.bat *.txt *.md *.html
+recursive-include reproducibility *.json *.md *.py *.txt
+prune reproducibility/release_20261023
+exclude reproducibility/release_verification.md
+recursive-include scripts compare_legacy_package.py
+include scripts/scan_unsupported_claims.py
+recursive-include migration legacy_fixed_seed_reference.json
+recursive-include tests *.py
+recursive-include experiments/review_revision_20261021 *.py protocol.json
+recursive-include experiments/task_statistics_20261022 *.py protocol.json
+recursive-include experiments/task_statistics_20261022/external *.csv *.json
+recursive-include experiments/two_view_review_20261022 *.py protocol.json
+recursive-include experiments/softwarex_application_case_20261020 *.py protocol.json
+include experiments/allocation_revision_20261022/run.py
+include experiments/allocation_revision_20261022/protocol.json
+include experiments/allocation_revision_20261022/README.md
+include experiments/two_view_review_20261022/results/raw_metrics.csv
+include experiments/two_view_review_20261022/results/field_budgets.csv
+recursive-include experiments/two_view_review_20261022/analysis *.csv report.json
+global-exclude __pycache__ *.py[cod] *.log ~$*
+prune output
+prune runs
+prune tmp
+prune temp
+prune dist
+prune build
+prune artifacts
+prune manuscript
+prune demo/runs
+prune examples/ontario_registration/_source_cache
+prune examples/ontario_registration/runs

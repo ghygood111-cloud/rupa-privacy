@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=77,<81", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rupa-privacy"
+dynamic = ["version"]
+description = "Configurable DP release toolkit for fixed-roster, row-preserving industrial microdata"
+readme = "README.md"
+requires-python = ">=3.9,<3.12"
+authors = [
+  {name = "高涵"},
+]
+license = "BSD-3-Clause"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+dependencies = [
+  "numpy>=1.23,<2.1",
+  "scipy>=1.9,<1.15",
+  "scikit-learn>=1.2,<1.7",
+  "pandas>=1.4,<2.4",
+  "openpyxl>=3.0,<4",
+  "PyYAML>=6.0,<7",
+]
+keywords = ["differential privacy", "industrial data", "privacy budget", "physical constraints"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+[project.optional-dependencies]
+parquet = ["pyarrow>=10"]
+demo = ["streamlit>=1.38,<2"]
+research = ["diffprivlib==0.6.5"]
+test = ["pytest>=7,<9", "pytest-cov>=4,<7"]
+
+[project.urls]
+Repository = "https://github.com/ghygood111-cloud/rupa-privacy"
+Documentation = "https://github.com/ghygood111-cloud/rupa-privacy/blob/v0.1.0/docs/index.md"
+Issues = "https://github.com/ghygood111-cloud/rupa-privacy/issues"
+Releases = "https://github.com/ghygood111-cloud/rupa-privacy/releases"
+
+[project.scripts]
+rupa-privacy = "rupa_privacy.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["rupa_privacy*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "rupa_privacy.version.__version__"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+  "locked_regression: exact SoftwareX regression checks for the frozen Python 3.9 environment",
+  "slow: resource-intensive tests excluded from the portable CI matrix",
+]

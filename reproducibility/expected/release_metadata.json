@@ -1,0 +1,5 @@
+{
+  "package_name": "rupa-privacy",
+  "version": "0.1.0",
+  "requires_python": ">=3.9,<3.12"
+}

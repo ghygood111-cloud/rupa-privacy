@@ -1,0 +1,3 @@
+# Preserve the exact source/fixture bytes used by the paper on every platform.
+# Disable newline conversion without disabling normal text diffs.
+* -text

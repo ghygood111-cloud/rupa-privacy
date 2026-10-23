@@ -1,0 +1,71 @@
+schema:
+  sensitive_target: energy_cost_index
+  numeric_columns:
+    - inflow_m3d
+    - treated_outflow_m3d
+    - process_loss_m3d
+    - total_energy_kwh
+  categorical_columns:
+    - plant_type
+    - shift
+  excluded_columns: [unit_id, energy_cost_index]
+  released_columns:
+    - inflow_m3d
+    - treated_outflow_m3d
+    - process_loss_m3d
+    - total_energy_kwh
+    - plant_type
+    - shift
+  public_bounds:
+    inflow_m3d: [50.0, 200.0]
+    treated_outflow_m3d: [40.0, 190.0]
+    process_loss_m3d: [0.0, 30.0]
+    total_energy_kwh: [800.0, 3500.0]
+  public_categories:
+    plant_type: [conventional, membrane]
+    shift: [day, night, rotating]
+privacy:
+  epsilon_total: 3.0
+  epsilon_numeric: 2.6
+  epsilon_categorical: 0.4
+  delta: 0.00001
+  utility_alpha: 0.6
+  repair_alpha: 0.9
+  randomness_mode: reproducibility
+  random_seed: 20260807
+  calibration_mode: synthetic
+  calibration_source: Small synthetic third-party reuse exercise
+  calibration_public_confirmed: false
+  release_data_mode: synthetic
+  release_source: Small synthetic third-party reuse exercise
+  release_public_confirmed: false
+  categorical_mode: randomized_response
+  categorical_budget_strategy: uniform
+  categorical_risk_smoothing: 0.05
+  nmi_bins: 5
+  joint_bins: 3
+  joint_nmi_diagnostic: false
+  knee_grid_points: 21
+adjacency:
+  type: fixed_roster_replace_one
+  privacy_unit_id: unit_id
+  roster_is_public: true
+  one_row_per_unit: true
+privacy_accounting:
+  dataset_id: third_party_reuse_synthetic_2026
+  maximum_cumulative_epsilon: 6.0
+  ledger_path: privacy_ledger.sqlite3
+regulatory_prior:
+  inflow_m3d: 0.18
+  treated_outflow_m3d: 0.25
+  process_loss_m3d: 0.17
+  total_energy_kwh: 0.25
+  plant_type: 0.08
+  shift: 0.07
+constraints:
+  - name: public_water_balance
+    type: equality
+    provenance: public
+    coefficients: {inflow_m3d: 1.0, treated_outflow_m3d: -1.0, process_loss_m3d: -1.0}
+    rhs: 0.0
+    tolerance: 0.01

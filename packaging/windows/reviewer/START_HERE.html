@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Start Here | RUPA Reviewer Test 0.1.0</title>
+<style>
+:root{--text:#26353e;--muted:#566773;--line:#d6dfe5;--accent:#235a83;--bg:#f5f7f9}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}
+main{max-width:880px;padding:28px 24px 48px;margin:auto;background:white}
+h1{font-size:28px;margin:0 0 4px}h2{font-size:20px;border-bottom:1px solid var(--line);padding-bottom:6px}
+p{margin:10px 0}li{margin:10px 0}code{background:var(--bg);padding:2px 5px}a{color:var(--accent)}
+.label{color:var(--muted);font-size:14px}.notice{border-left:4px solid #bc8422;background:#fff8e9;padding:12px 16px}
+table{border-collapse:collapse;width:100%}td,th{padding:8px;border-bottom:1px solid var(--line);text-align:left}
+</style></head>
+<body><main>
+<h1>RUPA Reviewer Evaluation Build</h1>
+<p class="label">Version 0.1.0 · Research Software · Independent review / user testing · Windows Debug</p>
+<h2>RUPA 是什么？</h2>
+<p>RUPA 是工业表格数据的隐私发布科研软件。在固定公开主体名单、每个主体一行的数据设定下，它利用独立校准数据估计字段风险和效用，分配隐私预算，对数值和类别字段进行扰动，并通过公开线性等式约束降低残差，生成可核查的最终公开数据。</p>
+<p>本测试版用来评估：第一次使用是否看得懂、操作是否顺畅、图表和结果解释是否清楚。它不是正式发行版，不是生产发布工具，也不保证最终数据严格满足所有物理关系。</p>
+<h2>如何启动</h2>
+<p>先解压整个测试包；<code>RUPA-debug.exe</code> 和 <code>_internal/</code> 必须在同一文件夹。不要从压缩包内直接运行，也不要只发送一个 EXE。</p>
+<div class="notice">只使用内置示例或获准公开的演示数据，不要输入真实保密数据。Debug 版运行时保留一个控制台窗口是正常现象；测试期间不要关闭它。软件尚未签名，如遇系统安全拦截，请交由 IT 核验，不要绕过安全警告。</div>
+<h2>完成一次官方示例：11 个操作</h2>
+<ol>
+<li>双击 <code>RUPA-debug.exe</code>。</li>
+<li>等待浏览器自动打开。若没有打开，查看控制台显示的本机地址；端口不一定是 8501。</li>
+<li>在首页点击 <strong>Load official synthetic example</strong>（即评审任务中的 Load Official Example）。Data 和 Configuration 变成 Ready 表示已加载；<strong>当前不会自动跳转</strong>。</li>
+<li>点击左侧 <strong>04 Validation</strong>。若导航折叠，先点击左上角展开箭头。</li>
+<li>点击 <strong>Run validation</strong>，确认出现 <strong>VALIDATION PASSED</strong>。</li>
+<li>点击左侧 <strong>05 Run</strong>。</li>
+<li>点击 <strong>Run RUPA</strong>，等待 <strong>Run completed successfully</strong>。</li>
+<li>点击左侧 <strong>06 Analysis</strong>。</li>
+<li>依次查看 Overview、Risk、Utility、Epsilon Allocation、Released Data、Constraint Residuals、Audit。</li>
+<li>点击左侧 <strong>07 Export</strong>。</li>
+<li>点击已有下载按钮。Analysis 中还提供 released CSV 和 residual plot data 下载。请记录是否触发下载以及文件名，不必寻找固定保存位置。</li>
+</ol>
+<p>Downloaded files are saved by your web browser according to its normal download settings, typically in the Windows Downloads folder.</p>
+<h2>读懂输入和结果</h2>
+<table><tr><th>页面中的词</th><th>含义</th></tr>
+<tr><td>Calibration dataset</td><td>用于估计风险和效用等参数的独立校准数据，不是最终发布结果。</td></tr>
+<tr><td>Release dataset</td><td>等待隐私处理的输入表，不是输出文件。</td></tr>
+<tr><td>Configuration</td><td>事先指定字段、公开边界、公开类别域、预算和线性约束的设置。默认案例不需要修改。</td></tr>
+<tr><td>Risk / NMI</td><td>校准数据上的关联诊断，不是攻击成功率，也不是正式 DP 隐私保证。</td></tr>
+<tr><td>Utility weight</td><td>预算分配的效用优先权重，不是预测准确率或已测得的数据效用。</td></tr>
+<tr><td>Epsilon</td><td>隐私预算；更大通常允许更小的扰动，但隐私界限更弱。</td></tr>
+<tr><td>Constraint Residuals</td><td>四阶段残差及 violation rate。残差下降不等于所有记录最终严格可行。</td></tr>
+<tr><td>release_data.csv</td><td>当前运行生成的最终公开发布表，不包含敏感目标值或原始私有输入表。</td></tr>
+</table>
+<p><strong>Supported public equality residuals are reduced, but exact final feasibility is not guaranteed.</strong> 官方示例的最终 violation rate 可能仍为 1；请如实检查，不要仅根据残差下降判断严格一致。</p>
+<h2>如何给出评审意见</h2>
+<p>按 <a href="REVIEW_TASKS.md">REVIEW_TASKS.md</a> 完成任务，在 <a href="REVIEW_FEEDBACK.md">REVIEW_FEEDBACK.md</a> 填写评分。文件可用任意文本阅读器打开；若浏览器提示下载，保存后打开即可。</p>
+<p><code>reviewer_evidence/</code> 中的证据由开发者在当前电脑实际运行生成，不是您的独立评分。您自己的运行会有新的 run_id，请将新截图和导出文件另行保留，勿覆盖这套参考证据。</p>
+<p>关闭浏览器不会结束程序。完成后关闭 Debug 控制台即可结束该进程。若启动失败，查看提示的启动日志位置；无法解决时记录错误交给开发者，不需要安装开发工具。</p>
+</main></body></html>

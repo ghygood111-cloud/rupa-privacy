@@ -1,0 +1,16 @@
+{
+  "status": "Frozen before evaluating the new allocation strategy",
+  "study_type": "Exploratory correction motivated by the already observed legacy budget-concentration failure; not an independent confirmatory trial",
+  "strategies": ["legacy_rupa", "uniform", "balanced_rupa"],
+  "epsilon_total": [1, 5, 20],
+  "repair_alpha": [0, 0.98],
+  "seeds": {"first": 20262300, "count": 30},
+  "cases": ["hazardous_waste", "water_treatment", "hazardous_waste_holdout"],
+  "holdout": {"unchanged_generator": "examples/hazardous_waste/generate_data.py", "rows": 1000, "seed": 20261022, "prefix": "HELDOUT-", "calibration": "existing hazardous_waste/calibration.csv; no fitting on held-out rows"},
+  "balanced_settings": {"numeric_risk_smoothing": 0.05, "numeric_stability_weight": 0.1, "numeric_min_uniform_fraction": 0.5, "numeric_max_uniform_multiple": 2.0},
+  "categorical_budget_strategy": "uniform for every strategy",
+  "primary_metric": "median field-total absolute relative error percent, across all numerical fields",
+  "secondary": ["range-normalized MAE", "range-normalized Wasserstein", "final NRMS", "final violation rate", "maximum numerical field budget share", "raw risk-exposure surrogate relative to uniform"],
+  "comparisons": "balanced-minus-legacy and balanced-minus-uniform paired mean differences with descriptive bootstrap intervals; every seed retained",
+  "scope": "Same row-wise Laplace, GRR, clipping and physical postprocessing. All input tables synthetic. Public bounds never inferred or narrowed using release records. No accuracy promise and no new DP theorem."
+}

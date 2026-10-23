@@ -1,0 +1,81 @@
+{
+  "completed_seed_bundles": 750,
+  "evaluated_states": 10500,
+  "independent_external_sources": 1,
+  "exploratory": true,
+  "comparisons": [
+    {
+      "case": "hazardous_waste",
+      "strategy": "uniform_statistics",
+      "D_over_A_mean_loss_ratio": 3.7582065689609983,
+      "descriptive_paired_hierarchical_ci95": [
+        3.659901620450544,
+        3.8394295776624703
+      ],
+      "C_D_maximum_loss_difference": 1.8207657603852567e-14,
+      "D_correlation_undefined_fraction": 0.04344322344322344,
+      "D_mean_constant_output_fields": 0.37333333333333335
+    },
+    {
+      "case": "hazardous_waste",
+      "strategy": "workload_rupa",
+      "D_over_A_mean_loss_ratio": 3.88664544957322,
+      "descriptive_paired_hierarchical_ci95": [
+        3.8254735640273414,
+        3.9394238588038855
+      ],
+      "C_D_maximum_loss_difference": 5.995204332975845e-15,
+      "D_correlation_undefined_fraction": 0.03326007326007326,
+      "D_mean_constant_output_fields": 0.33666666666666667
+    },
+    {
+      "case": "water_treatment",
+      "strategy": "uniform_statistics",
+      "D_over_A_mean_loss_ratio": 3.999999999999491,
+      "descriptive_paired_hierarchical_ci95": [
+        3.999999999999189,
+        3.999999999999792
+      ],
+      "C_D_maximum_loss_difference": 1.999810907149513e-16,
+      "D_correlation_undefined_fraction": 0.0,
+      "D_mean_constant_output_fields": 0.0
+    },
+    {
+      "case": "water_treatment",
+      "strategy": "workload_rupa",
+      "D_over_A_mean_loss_ratio": 3.999999999999088,
+      "descriptive_paired_hierarchical_ci95": [
+        3.999999999998843,
+        3.9999999999993303
+      ],
+      "C_D_maximum_loss_difference": 1.0001765041178778e-16,
+      "D_correlation_undefined_fraction": 0.0,
+      "D_mean_constant_output_fields": 0.0
+    },
+    {
+      "case": "uci_concrete",
+      "strategy": "uniform_statistics",
+      "D_over_A_mean_loss_ratio": 3.744597802479286,
+      "descriptive_paired_hierarchical_ci95": [
+        3.5718762092341025,
+        3.891121607004799
+      ],
+      "C_D_maximum_loss_difference": 2.55351295663786e-15,
+      "D_correlation_undefined_fraction": 0.029047619047619048,
+      "D_mean_constant_output_fields": 0.12
+    },
+    {
+      "case": "uci_concrete",
+      "strategy": "workload_rupa",
+      "D_over_A_mean_loss_ratio": 3.7781410404305964,
+      "descriptive_paired_hierarchical_ci95": [
+        3.5502649857525044,
+        3.966835021224064
+      ],
+      "C_D_maximum_loss_difference": 2.1649348980190553e-15,
+      "D_correlation_undefined_fraction": 0.008333333333333333,
+      "D_mean_constant_output_fields": 0.03333333333333333
+    }
+  ],
+  "maximum_normalized_target_mismatch": 4.880488491975344e-15
+}

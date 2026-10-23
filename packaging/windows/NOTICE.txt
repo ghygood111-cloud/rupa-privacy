@@ -1,0 +1,25 @@
+RUPA 0.1.0 - Research evaluation build
+Risk-Utility Privacy Allocation
+
+This executable distribution is provided for local academic evaluation.
+This Windows onedir package is for local public/synthetic reproducibility only.
+It is not a production privacy release console or a regulatory certification.
+Numerical and categorical DP mechanisms and scientific computations are unchanged.
+Public linear-constraint post-processing does not guarantee exact final feasibility.
+
+Current RUPA source is Copyright (c) 2026 高涵（中国矿业大学）,
+licensed under BSD-3-Clause. Preserve the root LICENSE and third-party notices.
+Public repository/release publication still requires owner file-list approval.
+This source notice does not certify or retroactively rebuild older EXE bundles.
+
+Keep RUPA.exe and _internal together. Python and application dependencies are
+bundled; no Python installation is needed to launch the local browser interface.
+Generated outputs and startup logs go to the current user's LOCALAPPDATA/RUPA.
+Closing the browser does not stop the background RUPA process.
+
+Third-party components retain their own copyright and license conditions.
+Their available license texts are collected in _internal/third_party_licenses.
+PyInstaller's bootloader redistribution exception is subject to its own license.
+No change is made to those licenses by this package. The EXE is not code-signed.
+
+Python-free clean-machine verification: NOT YET PERFORMED.

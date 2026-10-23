@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use RUPA Privacy, cite this software version and record the release URL and Git commit."
+type: software
+title: "RUPA Privacy: Task-aware and auditable privacy-preserving tabular data release"
+version: 0.1.0
+date-released: "2026-10-23"
+repository-code: "https://github.com/ghygood111-cloud/rupa-privacy"
+url: "https://github.com/ghygood111-cloud/rupa-privacy/releases/tag/v0.1.0"
+license: BSD-3-Clause
+authors:
+  - family-names: "高"
+    given-names: "涵"
+    affiliation: "中国矿业大学"
+abstract: >-
+  RUPA is research software for configurable differentially private release of
+  fixed-roster industrial microdata, with a controlled default row-release path
+  and separate public/synthetic-only aggregate and reconstruction research tools.
+keywords:
+  - differential privacy
+  - industrial data
+  - privacy budget allocation
+  - research software

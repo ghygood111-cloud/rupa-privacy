@@ -1,0 +1,149 @@
+schema:
+  sensitive_target: confidential_cost_index
+  numeric_columns:
+    - generated_total_t
+    - waste_acid_t
+    - distillation_residue_t
+    - incineration_fly_ash_t
+    - surface_treatment_waste_t
+    - transferred_total_t
+    - cross_region_transferred_t
+    - within_region_transferred_t
+    - on_site_treated_t
+    - retained_for_next_period_t
+    - manifest_total_count
+    - cross_region_manifest_count
+    - within_region_manifest_count
+    - emergency_response_count
+  categorical_columns:
+    - industry_group
+    - dominant_waste_type
+    - primary_handling_route
+    - emergency_plan_status
+  excluded_columns:
+    - public_enterprise_period_id
+    - qyid
+    - zzjgdm
+    - dwmc
+    - dwszqxz
+    - dwdz
+    - hylbdm
+    - lxr
+    - lxrsj
+    - gljhid
+    - year
+    - confidential_cost_index
+  released_columns:
+    - generated_total_t
+    - waste_acid_t
+    - distillation_residue_t
+    - incineration_fly_ash_t
+    - surface_treatment_waste_t
+    - transferred_total_t
+    - cross_region_transferred_t
+    - within_region_transferred_t
+    - on_site_treated_t
+    - retained_for_next_period_t
+    - manifest_total_count
+    - cross_region_manifest_count
+    - within_region_manifest_count
+    - emergency_response_count
+    - industry_group
+    - dominant_waste_type
+    - primary_handling_route
+    - emergency_plan_status
+  public_bounds:
+    generated_total_t: [0.0, 1600.0]
+    waste_acid_t: [0.0, 1600.0]
+    distillation_residue_t: [0.0, 1600.0]
+    incineration_fly_ash_t: [0.0, 1600.0]
+    surface_treatment_waste_t: [0.0, 1600.0]
+    transferred_total_t: [0.0, 1600.0]
+    cross_region_transferred_t: [0.0, 1600.0]
+    within_region_transferred_t: [0.0, 1600.0]
+    on_site_treated_t: [0.0, 1600.0]
+    retained_for_next_period_t: [0.0, 1600.0]
+    manifest_total_count: [0.0, 180.0]
+    cross_region_manifest_count: [0.0, 180.0]
+    within_region_manifest_count: [0.0, 180.0]
+    emergency_response_count: [0.0, 10.0]
+  public_categories:
+    industry_group: [steel_rolling, coking, metal_surface_treatment, waste_incineration]
+    dominant_waste_type: [waste_acid, distillation_residue, incineration_fly_ash, surface_treatment_waste]
+    primary_handling_route: [transfer, on_site, retained]
+    emergency_plan_status: [current, review_due]
+privacy:
+  epsilon_total: 5.0
+  epsilon_numeric: 4.3
+  epsilon_categorical: 0.7
+  delta: 0.00001
+  utility_alpha: 0.6
+  repair_alpha: 0.98
+  randomness_mode: reproducibility
+  random_seed: 20261016
+  calibration_mode: synthetic
+  calibration_source: Independent synthetic enterprise-year calibration roster from generate_data.py
+  calibration_public_confirmed: false
+  release_data_mode: synthetic
+  release_source: Independent synthetic enterprise-year release roster from generate_data.py
+  release_public_confirmed: false
+  categorical_mode: randomized_response
+  categorical_budget_strategy: heuristic_risk_utility
+  categorical_risk_smoothing: 0.05
+  nmi_bins: 10
+  joint_bins: 5
+  joint_nmi_diagnostic: true
+  knee_grid_points: 21
+regulatory_prior:
+  generated_total_t: 0.12
+  waste_acid_t: 0.06
+  distillation_residue_t: 0.06
+  incineration_fly_ash_t: 0.06
+  surface_treatment_waste_t: 0.06
+  transferred_total_t: 0.10
+  cross_region_transferred_t: 0.08
+  within_region_transferred_t: 0.06
+  on_site_treated_t: 0.06
+  retained_for_next_period_t: 0.05
+  manifest_total_count: 0.06
+  cross_region_manifest_count: 0.05
+  within_region_manifest_count: 0.04
+  emergency_response_count: 0.03
+  industry_group: 0.04
+  dominant_waste_type: 0.03
+  primary_handling_route: 0.02
+  emergency_plan_status: 0.02
+constraints:
+  - name: synthetic_waste_type_sum
+    type: equality
+    provenance: public
+    coefficients: {generated_total_t: 1.0, waste_acid_t: -1.0, distillation_residue_t: -1.0, incineration_fly_ash_t: -1.0, surface_treatment_waste_t: -1.0}
+    rhs: 0.0
+    tolerance: 0.01
+  - name: synthetic_transfer_split
+    type: equality
+    provenance: public
+    coefficients: {transferred_total_t: 1.0, cross_region_transferred_t: -1.0, within_region_transferred_t: -1.0}
+    rhs: 0.0
+    tolerance: 0.01
+  - name: synthetic_handling_balance
+    type: equality
+    provenance: public
+    coefficients: {generated_total_t: 1.0, transferred_total_t: -1.0, on_site_treated_t: -1.0, retained_for_next_period_t: -1.0}
+    rhs: 0.0
+    tolerance: 0.01
+  - name: synthetic_manifest_split
+    type: equality
+    provenance: public
+    coefficients: {manifest_total_count: 1.0, cross_region_manifest_count: -1.0, within_region_manifest_count: -1.0}
+    rhs: 0.0
+    tolerance: 0.01
+adjacency:
+  type: fixed_roster_replace_one
+  privacy_unit_id: public_enterprise_period_id
+  roster_is_public: true
+  one_row_per_unit: true
+privacy_accounting:
+  dataset_id: hazardous_waste_synthetic_enterprise_year_2026
+  maximum_cumulative_epsilon: 10.0
+  ledger_path: privacy_ledger.sqlite3

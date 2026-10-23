@@ -1,0 +1,39 @@
+{
+  "name": "Concrete Compressive Strength",
+  "creator": "I-Cheng Yeh",
+  "doi": "10.24432/C5PK67",
+  "source_url": "https://archive.ics.uci.edu/static/public/165/data.csv",
+  "repository_url": "https://archive.ics.uci.edu/dataset/165/concrete+compressive+strength",
+  "license": "CC BY 4.0",
+  "source_sha256": "8d4b15b6fc68cd932d745cbd663d5ceae66dd54422e99c1e4865f2936ab7e2af",
+  "rows": 1030,
+  "blocks": [
+    {
+      "block": 0,
+      "calibration": 80,
+      "release": 128
+    },
+    {
+      "block": 1,
+      "calibration": 81,
+      "release": 108
+    },
+    {
+      "block": 2,
+      "calibration": 78,
+      "release": 132
+    },
+    {
+      "block": 3,
+      "calibration": 92,
+      "release": 129
+    },
+    {
+      "block": 4,
+      "calibration": 78,
+      "release": 124
+    }
+  ],
+  "preparation": "No rows dropped. Recipe groups are disjoint across blocks and calibration/release. Published measurement row is the evaluation unit; not enterprise or recipe-level privacy.",
+  "privacy_status": "Already public benchmark; not confidential industrial deployment"
+}

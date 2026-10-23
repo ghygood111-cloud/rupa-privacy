@@ -1,0 +1,7 @@
+# Full source + optional GUI/plot validation, not confidential-release dependencies.
+-r requirements-lock-py39.txt
+streamlit==1.50.0
+matplotlib==3.9.4
+diffprivlib==0.6.5
+# pytest 7.1.2 / pluggy 1.0 reference compatibility.
+pytest-cov==4.1.0

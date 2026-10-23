@@ -1,0 +1,368 @@
+{
+  "status": "LOCAL_VERIFICATION_PASS_OWNER_APPROVED_PUBLICATION",
+  "version": "0.1.0",
+  "proposed_tag": "v0.1.0",
+  "github_repository_url": "https://github.com/ghygood111-cloud/rupa-privacy",
+  "github_release_url": null,
+  "release_commit": null,
+  "zenodo_doi": null,
+  "source_archive_tests": {
+    "passed": 420,
+    "failed": 0,
+    "skipped": 0,
+    "warnings": 23,
+    "seconds": 40.26
+  },
+  "installed_wheel_tests": {
+    "passed": 420,
+    "failed": 0,
+    "skipped": 0,
+    "warnings": 23,
+    "seconds": 39.263
+  },
+  "core_files": 39,
+  "core_matches_paper": true,
+  "core_sha256": {
+    "src/rupa_privacy/__init__.py": "88a565a8cda304f84371f122688dfc7d267c7709af41ea9c1fe186d4b3364292",
+    "src/rupa_privacy/__main__.py": "8b551ba37f77a56da84b915b9754e5c6b32d189ac1593c4cd5c62134d40936d1",
+    "src/rupa_privacy/accounting.py": "a683bc874654598e5633c7b7d38353a1a8b77230d88abb8ca6e84843a05ea9d0",
+    "src/rupa_privacy/allocation/__init__.py": "9d1bbd12f5a1818ff0b28902ba4d7493eef34c55a5cc685c31b8e93c136d655b",
+    "src/rupa_privacy/allocation/balanced.py": "926d66317122ed1bc0f1bb3d807aff80db2d7115e87f22f9e80c77b917b003e1",
+    "src/rupa_privacy/allocation/budget.py": "7fbe068e7bb57a5c771f05030bcf8992256a3b1b627e3704df10d787a6860317",
+    "src/rupa_privacy/allocation/optimizer.py": "34e136f9373f5793e5a88ac2fae75ec406cb4529f1a90dd3c6fb9192f43a655a",
+    "src/rupa_privacy/allocation/workload.py": "b0c0d0dd38e87f2cdf9fdd1167fc80171099d96da0ca6def088d79e8a13c6494",
+    "src/rupa_privacy/cli.py": "6f168b5d633cb62b71fc9bf76d3d4df7a755396132a7a4a174cea8a63994df27",
+    "src/rupa_privacy/data/__init__.py": "b7d88c131088eb1cdd37d06efeb63f37049a506160d624befe8935dcdf06b17a",
+    "src/rupa_privacy/data/synthetic.py": "c77f29798a526f9ae833c20b33f66a63c097fc8ee51b004d41ff1f8622347b40",
+    "src/rupa_privacy/evaluation/__init__.py": "1d82590980233cb28dd74f793eceaf49f9f32bc534f177bc90a27f559864d05c",
+    "src/rupa_privacy/evaluation/metrics.py": "a05b62c11cc61f77f9e85d699fe129fe36d797d0466a29e5229406a0d155a23c",
+    "src/rupa_privacy/exceptions.py": "bdf3698a5bba246cd9a09af13a8605c242858758d504c2f2e56d02866201fe12",
+    "src/rupa_privacy/governance.py": "200ec0f1c37bdf7c82cc2111c6bc675e8cbb7eee8ee35107f25529aa2d0c8284",
+    "src/rupa_privacy/io/__init__.py": "c59fd87744b8fa807a4e0c8f219a8d67c981f05bb23d526978ffb5af5c3c35a2",
+    "src/rupa_privacy/io/config.py": "c340e52ce923f1604f7a735d74b32e15b74dac903b47fd8800ff73dd42260c7f",
+    "src/rupa_privacy/io/data.py": "4ebdb113e8bdfc03433800ed80710e8dcfd7fba947d947c79ea83e2a9d920003",
+    "src/rupa_privacy/io/profile.py": "86d64ee74847056fedeff4f7b4b099bf9dd06c237c9812da1ff988210b215eea",
+    "src/rupa_privacy/io/run.py": "b554ff44b4be2ecc3b25625cc97579c364d0933e0c18c45dafe448b9b274b752",
+    "src/rupa_privacy/ledger.py": "cf15b56166aae7a999fa611d22100ccb9af6876c5238b1195348565e925e3c5f",
+    "src/rupa_privacy/mechanisms/__init__.py": "a25dd9c629115491ecad0123b1944906cc8bf6d4a4bcc8480d900334e5653733",
+    "src/rupa_privacy/mechanisms/categorical.py": "3c46fe5169b3c555fdd27cbbd15bf3dc5b6f56c05272f01249c77f75833d8311",
+    "src/rupa_privacy/mechanisms/numerical.py": "56be695c17d4042c8d1b8344323043eb2e7b66477f33ecb1201af6da3d33d9d9",
+    "src/rupa_privacy/mechanisms/release.py": "7ee74df9f87609dc397837f80c679871cae67e9f3581eedee22538ce0475489b",
+    "src/rupa_privacy/models.py": "d5937c4d0bbe7fbacb0e43d2d34f19450c9f21a3727b91e042451da62f485f90",
+    "src/rupa_privacy/physics/__init__.py": "bf8432c8046edf0ab736b76e2d23786e3db099716a823617f7869935639085e5",
+    "src/rupa_privacy/physics/projection.py": "c14eb64eca2536b569addbf832d8668fb933050655a0ac62b695201276a53d8e",
+    "src/rupa_privacy/physics/reconstruction.py": "d4ec50f4ba308333dd42e68d9047636535db25c9768572ef4253c3bd131f1462",
+    "src/rupa_privacy/physics/validation.py": "a911c2347a5681ce1589f794ae7641fab8d6e63223cfe17f706f7eaa06d9a2a1",
+    "src/rupa_privacy/pipeline.py": "c2b4124e7c4197eeb73cbe8ac6ca1b77cca5621b6ec0c8cf6723c08cc2c36953",
+    "src/rupa_privacy/randomness.py": "edc8aab5dd95230b0b6cc35a3fcc72f9ff88607156fdab52563addf51540e8d4",
+    "src/rupa_privacy/research.py": "b1cc9e1f10b0bdafd578060e68a675ee14341283b1497d543f2e9a9e014f9fe3",
+    "src/rupa_privacy/risk/__init__.py": "24ce6987d33076e7eaba58a2d9f9014514f71682d0f93789b7982d145270d698",
+    "src/rupa_privacy/risk/nmi.py": "24a462df9c65a6a7170713c1af101109125f947bab897b785271bee1e9abc35a",
+    "src/rupa_privacy/utility/__init__.py": "caf71f69fe5830228351eac9f5cdae32b189746812532abd6b760a4de1e8b665",
+    "src/rupa_privacy/utility/weights.py": "ca154bc98f12dbd804771996e402e8fcd44488139646d58dff231fb753fbd9a9",
+    "src/rupa_privacy/validation.py": "d40ad1ac78e25b5aa8082a5988cc4f83049c7b75435293174b987307d9813f09",
+    "src/rupa_privacy/version.py": "9b68d27ab9131d17fb93bbbecd6708b680805f1cfa9d83e5e83f37cbb868d0ce"
+  },
+  "artifacts": {
+    "wheel": {
+      "name": "rupa_privacy-0.1.0-py3-none-any.whl",
+      "bytes": 67400,
+      "sha256": "a58c8fb3515ae4c0c2bea4c96a3f869d70f459d1950b0f02602fbfe59804c54c",
+      "core_files": 39
+    },
+    "sdist": {
+      "name": "rupa_privacy-0.1.0.tar.gz",
+      "bytes": 2032860,
+      "sha256": "06396b996d9c9016e24ee60811dd2fb657d10249f5f96303f81839eecf57c8ec",
+      "core_files": 39
+    },
+    "core_matches_paper": true,
+    "license_files": true,
+    "unsupported_studio_absent": true
+  },
+  "python": "3.9.13",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "legacy_regression": {
+    "source_final": [
+      {
+        "quantity": "single_risk_scores",
+        "comparison": "max_absolute_difference",
+        "value": "0.0",
+        "tolerance": "1e-12",
+        "status": "PASS"
+      },
+      {
+        "quantity": "joint_penalty",
+        "comparison": "max_absolute_difference",
+        "value": "0.0",
+        "tolerance": "1e-12",
+        "status": "PASS"
+      },
+      {
+        "quantity": "utility_weights",
+        "comparison": "max_absolute_difference",
+        "value": "0.0",
+        "tolerance": "1e-12",
+        "status": "PASS"
+      },
+      {
+        "quantity": "epsilon_allocation",
+        "comparison": "max_absolute_difference",
+        "value": "0.0",
+        "tolerance": "1e-10",
+        "status": "PASS"
+      },
+      {
+        "quantity": "noisy_release_digest",
+        "comparison": "sha256_of_rounded_fixed_seed_table",
+        "value": "c178075578c14e2f04c85b48fd50aa7c932f819db966a2426931776953d98dc9",
+        "tolerance": "c178075578c14e2f04c85b48fd50aa7c932f819db966a2426931776953d98dc9",
+        "status": "PASS"
+      },
+      {
+        "quantity": "final_release_digest",
+        "comparison": "sha256_of_rounded_fixed_seed_table",
+        "value": "bb90b8dc3f3162051c9217537886b05b59ee9065e4d5f0405d07b8a38da0fa77",
+        "tolerance": "bb90b8dc3f3162051c9217537886b05b59ee9065e4d5f0405d07b8a38da0fa77",
+        "status": "PASS"
+      }
+    ],
+    "wheel_final": [
+      {
+        "quantity": "single_risk_scores",
+        "comparison": "max_absolute_difference",
+        "value": "0.0",
+        "tolerance": "1e-12",
+        "status": "PASS"
+      },
+      {
+        "quantity": "joint_penalty",
+        "comparison": "max_absolute_difference",
+        "value": "0.0",
+        "tolerance": "1e-12",
+        "status": "PASS"
+      },
+      {
+        "quantity": "utility_weights",
+        "comparison": "max_absolute_difference",
+        "value": "0.0",
+        "tolerance": "1e-12",
+        "status": "PASS"
+      },
+      {
+        "quantity": "epsilon_allocation",
+        "comparison": "max_absolute_difference",
+        "value": "0.0",
+        "tolerance": "1e-10",
+        "status": "PASS"
+      },
+      {
+        "quantity": "noisy_release_digest",
+        "comparison": "sha256_of_rounded_fixed_seed_table",
+        "value": "c178075578c14e2f04c85b48fd50aa7c932f819db966a2426931776953d98dc9",
+        "tolerance": "c178075578c14e2f04c85b48fd50aa7c932f819db966a2426931776953d98dc9",
+        "status": "PASS"
+      },
+      {
+        "quantity": "final_release_digest",
+        "comparison": "sha256_of_rounded_fixed_seed_table",
+        "value": "bb90b8dc3f3162051c9217537886b05b59ee9065e4d5f0405d07b8a38da0fa77",
+        "tolerance": "bb90b8dc3f3162051c9217537886b05b59ee9065e4d5f0405d07b8a38da0fa77",
+        "status": "PASS"
+      }
+    ]
+  },
+  "four_path_reproduction": {
+    "states": 10500,
+    "paired_bundles": 750,
+    "metric_max_abs_diff": {
+      "seed": 0.0,
+      "row_epsilon": 0.0,
+      "total_query_epsilon": 0.0,
+      "composed_epsilon": 0.0,
+      "normalized_total_squared_error": 0.0,
+      "mean_total_relative_error_percent": 0.0,
+      "median_total_relative_error_percent": 0.0,
+      "maximum_total_relative_error_percent": 0.0,
+      "undefined_total_relative_fields": 0.0,
+      "maximum_aggregate_equality_residual": 0.0,
+      "mean_relative_error_percent": 0.0,
+      "standard_deviation_relative_error_percent": 0.0,
+      "standard_deviation_ratio": 0.0,
+      "wasserstein_range": 0.0,
+      "ks_statistic": 0.0,
+      "row_mae_range": 0.0,
+      "row_rmse_range": 0.0,
+      "quantile_mean_error_range": 0.0,
+      "constant_output_fields": 0.0,
+      "undefined_standard_deviation_fields": 0.0,
+      "correlation_mae_defined_pairs": 0.0,
+      "correlation_pairs": 0.0,
+      "reference_undefined_correlation_pairs": 0.0,
+      "output_undefined_correlation_pairs": 0.0,
+      "row_equality_nrms_public_range": 0.0,
+      "violating_row_fraction": 0.0
+    },
+    "missing_value_masks_match": {
+      "seed": true,
+      "row_epsilon": true,
+      "total_query_epsilon": true,
+      "composed_epsilon": true,
+      "normalized_total_squared_error": true,
+      "mean_total_relative_error_percent": true,
+      "median_total_relative_error_percent": true,
+      "maximum_total_relative_error_percent": true,
+      "undefined_total_relative_fields": true,
+      "maximum_aggregate_equality_residual": true,
+      "mean_relative_error_percent": true,
+      "standard_deviation_relative_error_percent": true,
+      "standard_deviation_ratio": true,
+      "wasserstein_range": true,
+      "ks_statistic": true,
+      "row_mae_range": true,
+      "row_rmse_range": true,
+      "quantile_mean_error_range": true,
+      "constant_output_fields": true,
+      "undefined_standard_deviation_fields": true,
+      "correlation_mae_defined_pairs": true,
+      "correlation_pairs": true,
+      "reference_undefined_correlation_pairs": true,
+      "output_undefined_correlation_pairs": true,
+      "row_equality_nrms_public_range": true,
+      "violating_row_fraction": true
+    },
+    "all_metrics_exact": true,
+    "comparison_excludes_operational_run_ids_and_timing": true
+  },
+  "examples": {
+    "official": "PASS",
+    "water_treatment": "PASS",
+    "third_party_reuse": "PASS",
+    "hazardous_waste": "PASS",
+    "ontario_registration": "PASS"
+  },
+  "readme_commands_and_api": "PASS",
+  "citation_schema": "CFF 1.2.0 PASS",
+  "initial_failed_pytest_attempts": 1,
+  "resolved_issues": [
+    "Separated modern build tooling from the historical scientific packaging lock.",
+    "Pinned pytest-cov 4.1.0 for pytest 7.1.2 / pluggy 1.0 reference compatibility."
+  ],
+  "limitations": [
+    "No public repository/release exists yet; no publication or authentication attempted.",
+    "Author-local Windows/Python 3.9 verification is not independent third-party replication.",
+    "Hosted CI, Zenodo DOI, independent security audit and comprehensive CVE audit are not claimed.",
+    "Original private Git history is not part of the publication candidate.",
+    "Full final per-field/correlation tables are regenerable, not all historical development output is archived."
+  ],
+  "owner_manifest_approval_date": "2026-10-23",
+  "publication_note": "Repository created after explicit owner approval. The actual published tag, commit and release assets are recorded separately after push; this report records the verified build, not its own future commit.",
+  "publication_metadata_recheck": {
+    "publication_source": {
+      "tests": "420",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "68.491",
+      "legacy": [
+        {
+          "quantity": "single_risk_scores",
+          "comparison": "max_absolute_difference",
+          "value": "0.0",
+          "tolerance": "1e-12",
+          "status": "PASS"
+        },
+        {
+          "quantity": "joint_penalty",
+          "comparison": "max_absolute_difference",
+          "value": "0.0",
+          "tolerance": "1e-12",
+          "status": "PASS"
+        },
+        {
+          "quantity": "utility_weights",
+          "comparison": "max_absolute_difference",
+          "value": "0.0",
+          "tolerance": "1e-12",
+          "status": "PASS"
+        },
+        {
+          "quantity": "epsilon_allocation",
+          "comparison": "max_absolute_difference",
+          "value": "0.0",
+          "tolerance": "1e-10",
+          "status": "PASS"
+        },
+        {
+          "quantity": "noisy_release_digest",
+          "comparison": "sha256_of_rounded_fixed_seed_table",
+          "value": "c178075578c14e2f04c85b48fd50aa7c932f819db966a2426931776953d98dc9",
+          "tolerance": "c178075578c14e2f04c85b48fd50aa7c932f819db966a2426931776953d98dc9",
+          "status": "PASS"
+        },
+        {
+          "quantity": "final_release_digest",
+          "comparison": "sha256_of_rounded_fixed_seed_table",
+          "value": "bb90b8dc3f3162051c9217537886b05b59ee9065e4d5f0405d07b8a38da0fa77",
+          "tolerance": "bb90b8dc3f3162051c9217537886b05b59ee9065e4d5f0405d07b8a38da0fa77",
+          "status": "PASS"
+        }
+      ]
+    },
+    "publication_wheel": {
+      "tests": "420",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "43.581",
+      "legacy": [
+        {
+          "quantity": "single_risk_scores",
+          "comparison": "max_absolute_difference",
+          "value": "0.0",
+          "tolerance": "1e-12",
+          "status": "PASS"
+        },
+        {
+          "quantity": "joint_penalty",
+          "comparison": "max_absolute_difference",
+          "value": "0.0",
+          "tolerance": "1e-12",
+          "status": "PASS"
+        },
+        {
+          "quantity": "utility_weights",
+          "comparison": "max_absolute_difference",
+          "value": "0.0",
+          "tolerance": "1e-12",
+          "status": "PASS"
+        },
+        {
+          "quantity": "epsilon_allocation",
+          "comparison": "max_absolute_difference",
+          "value": "0.0",
+          "tolerance": "1e-10",
+          "status": "PASS"
+        },
+        {
+          "quantity": "noisy_release_digest",
+          "comparison": "sha256_of_rounded_fixed_seed_table",
+          "value": "c178075578c14e2f04c85b48fd50aa7c932f819db966a2426931776953d98dc9",
+          "tolerance": "c178075578c14e2f04c85b48fd50aa7c932f819db966a2426931776953d98dc9",
+          "status": "PASS"
+        },
+        {
+          "quantity": "final_release_digest",
+          "comparison": "sha256_of_rounded_fixed_seed_table",
+          "value": "bb90b8dc3f3162051c9217537886b05b59ee9065e4d5f0405d07b8a38da0fa77",
+          "tolerance": "bb90b8dc3f3162051c9217537886b05b59ee9065e4d5f0405d07b8a38da0fa77",
+          "status": "PASS"
+        }
+      ]
+    },
+    "status": "PASS",
+    "scientific_core_changed": false,
+    "examples": "Official, water, reuse, hazardous-waste and Ontario: PASS",
+    "reproducibility": "PASS"
+  }
+}

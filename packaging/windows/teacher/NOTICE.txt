@@ -1,0 +1,9 @@
+RUPA 0.1.0
+Research Evaluation Build
+
+This package is provided for local academic evaluation.
+It is not the formal archival SoftwareX release.
+
+Current source copyright: 高涵（中国矿业大学）, 2026.
+Source license: BSD-3-Clause; preserve LICENSE and third-party notices.
+Public release awaits owner file-list approval. Older EXEs are not rebuilt here.

@@ -1,0 +1,25 @@
+# RUPA SoftwareX reference environment
+# Python interpreter: CPython 3.9.13 (install separately; pip cannot install Python)
+numpy==1.26.4
+pandas==1.4.4
+scipy==1.13.1
+scikit-learn==1.6.1
+PyYAML==6.0
+openpyxl==3.0.10
+joblib==1.5.3
+threadpoolctl==3.6.0
+python-dateutil==2.8.2
+pytz==2022.1
+six==1.16.0
+et-xmlfile==1.1.0
+pytest==7.1.2
+attrs==21.4.0
+iniconfig==1.1.1
+packaging==21.3
+pluggy==1.0.0
+py==1.11.0
+atomicwrites==1.4.0
+colorama==0.4.5
+tomli==2.0.1
+importlib-metadata==4.11.3
+zipp==3.8.0

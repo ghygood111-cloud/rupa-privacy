@@ -1,0 +1,136 @@
+schema:
+  sensitive_target: production
+  numeric_columns:
+  - wastewater
+  - cod
+  - electricity
+  - ore_input
+  - fresh_water
+  - runtime
+  - dust
+  - circulating_water
+  categorical_columns:
+  - province
+  - scale
+  excluded_columns: []
+  released_columns:
+  - wastewater
+  - cod
+  - electricity
+  - ore_input
+  - fresh_water
+  - runtime
+  - dust
+  - circulating_water
+  - province
+  - scale
+  public_bounds:
+    wastewater:
+    - 1000.0
+    - 7000.0
+    cod:
+    - 20.0
+    - 180.0
+    electricity:
+    - 5000.0
+    - 35000.0
+    ore_input:
+    - 250.0
+    - 1600.0
+    fresh_water:
+    - 20.0
+    - 250.0
+    runtime:
+    - 5.0
+    - 16.0
+    dust:
+    - 0.0
+    - 20.0
+    circulating_water:
+    - 800.0
+    - 7000.0
+  public_categories:
+    province:
+    - hebei
+    - liaoning
+    - neimenggu
+    - shanxi
+    scale:
+    - large
+    - medium
+    - small
+privacy:
+  epsilon_total: 5.0
+  epsilon_numeric: 4.6
+  epsilon_categorical: 0.4
+  delta: 1.0e-05
+  utility_alpha: 0.6
+  repair_alpha: 0.98
+  randomness_mode: reproducibility
+  random_seed: 123
+  calibration_mode: synthetic
+  calibration_source: Built-in deterministic synthetic calibration generator
+  calibration_public_confirmed: false
+  release_data_mode: synthetic
+  release_source: Built-in deterministic synthetic release generator
+  release_public_confirmed: false
+  categorical_mode: randomized_response
+  categorical_budget_strategy: heuristic_risk_utility
+  categorical_risk_smoothing: 0.05
+  nmi_bins: 10
+  joint_bins: 5
+  joint_nmi_diagnostic: true
+  knee_grid_points: 21
+regulatory_prior:
+  wastewater: 0.15
+  cod: 0.12
+  electricity: 0.3
+  ore_input: 0.2
+  fresh_water: 0.06
+  runtime: 0.08
+  dust: 0.03
+  circulating_water: 0.04
+  province: 0.01
+  scale: 0.01
+constraints:
+- name: cod_wastewater_ratio
+  coefficients:
+    cod: 1.0
+    wastewater: -0.025
+  rhs: 0.0
+  tolerance: 0.01
+  type: equality
+  provenance: public
+- name: wastewater_electricity_balance
+  coefficients:
+    wastewater: 0.08264462809917356
+    electricity: -0.016666666666666666
+  rhs: 0.0
+  tolerance: 0.01
+  type: equality
+  provenance: public
+- name: electricity_ore_balance
+  coefficients:
+    electricity: 0.016666666666666666
+    ore_input: -0.3472222222222222
+  rhs: 0.0
+  tolerance: 0.01
+  type: equality
+  provenance: public
+- name: wastewater_freshwater_balance
+  coefficients:
+    wastewater: 0.08264462809917356
+    fresh_water: -2.5
+  rhs: 0.0
+  tolerance: 0.01
+  type: equality
+  provenance: public
+adjacency:
+  type: fixed_roster_replace_one
+  privacy_unit_id: enterprise_id
+  roster_is_public: true
+  one_row_per_unit: true
+privacy_accounting:
+  dataset_id: rupa_synthetic_example_2026
+  maximum_cumulative_epsilon: 10.0
+  ledger_path: privacy_ledger.sqlite3

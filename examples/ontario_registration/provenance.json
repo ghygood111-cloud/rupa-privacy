@@ -1,0 +1,54 @@
+{
+  "source_url": "https://files.ontario.ca/moe_mapping/downloads/3Land/HWIN_by_year/2002-2022_Waste_Generator_Registration-Numbers_Classes_Database.csv",
+  "catalogue_api": "https://data.ontario.ca/api/3/action/package_show?id=hazardous-waste-public-information",
+  "source_resource": "2002-2022 Generator Registration and Waste Classes",
+  "publisher": "Ontario Ministry of the Environment, Conservation and Parks",
+  "accessed_date": "2026-10-20",
+  "license_id": "OGL-ON-1.0",
+  "license_url": "https://www.ontario.ca/page/open-government-licence-ontario",
+  "attribution": "Contains information licensed under the Open Government Licence - Ontario.",
+  "source_sha256": "d9da99e6f4c6e7227290ef74b68646f4d12e9471a1bbdffa1b6b30caf9bd771d",
+  "source_bytes": 76117773,
+  "catalogue_metadata_sha256": "4124c2789683aa3105fe6a2a5f0c3aba930cbb15f2edc4787b8f1e12efdad806",
+  "source_encoding": "latin1",
+  "source_columns_read": [
+    "GENERATOR_NUMBER",
+    "WASTE_CLASS_CODE",
+    "PHYSICAL_STATE"
+  ],
+  "derivation": "Any physical-state occurrence per literal registration; no waste-mass inference. Distinct class count used only as a public calibration proxy.",
+  "public_roster_key": "ONT- plus zero-padded ordinal in lexical registration order; no identity-hiding claim.",
+  "split": "SHA256(trimmed literal registration number) as integer modulo 5: 0 calibration; other residues release.",
+  "public_domains": {
+    "handles_liquid": [
+      "no",
+      "yes"
+    ],
+    "handles_solid": [
+      "no",
+      "yes"
+    ]
+  },
+  "priority_note": "Equal analyst-selected coverage priorities, not official regulatory weights.",
+  "physical_constraints": "None: categorical coverage has no numerical equality task.",
+  "data_status": "Already public; historical combined inventory, not an annual/current census or confidential deployment.",
+  "diagnostics": {
+    "source_rows": 475345,
+    "missing_registration_rows_excluded": 4,
+    "registration_units": 115296,
+    "calibration_rows": 23230,
+    "release_rows": 92066,
+    "source_physical_state_row_counts": {
+      "liquid": 356330,
+      "solid": 105150,
+      "gas": 13838,
+      "": 23
+    },
+    "unit_overlap": 0
+  },
+  "prepared_sha256": {
+    "calibration.csv": "efac27c34ccaf2583c33b61336d8e19bd4c5380a0de713c89093bb21f96b38be",
+    "release.csv": "69ff393672adc017e17ba918729476e17e699451781a167ce8afb5394a63b602",
+    "config_reproducibility.yaml": "491d5fbe173bd58c0b5f149d52a2842a1e00a7156fcb34eace36b8c195db3862"
+  }
+}

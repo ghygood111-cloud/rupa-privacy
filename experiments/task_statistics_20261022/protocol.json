@@ -1,0 +1,22 @@
+{
+  "status": "Frozen before new release outcomes or external numeric values are evaluated",
+  "design_status": "Exploratory redesign motivated by observed row-release failure; calibration-only projected variance was examined for the two existing synthetic schemas",
+  "output_object": "Numerical column totals and equivalent means; not a replacement row-level microdata table",
+  "strategies": ["uniform_statistics", "workload_rupa", "workload_without_risk_cap"],
+  "epsilon_total": [1, 5, 20],
+  "mechanism_seeds": {"first": 20280000, "count": 200},
+  "synthetic_cases": ["hazardous_waste", "water_treatment"],
+  "independent_generated_pairs_per_case": 10,
+  "calibration_seed_first": 20281000,
+  "public_external_dataset": {"name": "UCI Concrete Compressive Strength", "id": 165, "doi": "10.24432/C5PK67", "license": "CC BY 4.0", "disjoint_blocks": 5, "split_salt": "RUPA-external-statistics-v1", "calibration_fraction": 0.4, "recipe_grouping": "All records with identical eight-feature recipes stay in the same block and calibration/release partition"},
+  "calibration_scale": "max(abs(clipped calibration mean), 0.01 * public range)",
+  "task_weights": "Equal weights over all numerical means; no field selected after evaluating outcomes",
+  "postprocessing": "Same fixed public range-weighted linear equality projection for all strategies; final public-bound clipping also reported separately",
+  "allocation": {"risk_smoothing": 0.05, "min_uniform_fraction": 0.5, "max_uniform_multiple": 2.0, "stability_weight": 0},
+  "primary": "Expected calibration-normalized projected squared error and empirical mean of that error over all seeds; analytical expression includes any common projection bias",
+  "secondary": ["final-clipped normalized squared error", "median-field absolute relative total error", "mean-field absolute relative total error", "maximum-field absolute relative total error", "absolute relative error for each field", "constraint NRMS", "all negative/unbounded projected estimates", "per-dataset strategy differences"],
+  "uncertainty": "Within-dataset P10/P90 seed ranges; paired differences and bootstrap intervals; between-dataset summaries separated from within-dataset noise. Independent generated pairs are not external generalization. One external public dataset is not independent-user or confidential deployment evidence.",
+  "privacy": "Trusted centralized processing, fixed public roster, one row per unit, replace-one adjacency. Independent fixed calibration parameters. Pure DP column-sum sensitivity is U-L, not n*(U-L). Field epsilons sum to the total. Reproducibility mode on synthetic/public inputs only. No production authorization path added.",
+  "fairness": "Uniform and optimized strategies use the identical aggregate task, mechanism, public bounds, projection, clipping and paired noise draws. No aggregate-versus-microdata superiority ranking.",
+  "failures": "All failures and all seeds retained; no hidden retries or output overwriting"
+}

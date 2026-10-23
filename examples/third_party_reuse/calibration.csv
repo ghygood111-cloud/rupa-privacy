@@ -1,0 +1,13 @@
+unit_id,inflow_m3d,treated_outflow_m3d,process_loss_m3d,total_energy_kwh,plant_type,shift,energy_cost_index
+cal_001,82,77,5,1260,conventional,day,41.2
+cal_002,96,89,7,1510,membrane,night,53.8
+cal_003,110,102,8,1690,conventional,rotating,56.1
+cal_004,124,116,8,1910,membrane,day,64.5
+cal_005,138,128,10,2160,conventional,night,70.2
+cal_006,152,141,11,2380,membrane,rotating,78.9
+cal_007,166,154,12,2570,conventional,day,80.4
+cal_008,178,164,14,2820,membrane,night,92.1
+cal_009,88,82,6,1370,membrane,rotating,47.6
+cal_010,118,109,9,1840,conventional,night,60.8
+cal_011,146,136,10,2290,membrane,day,74.7
+cal_012,190,174,16,3050,conventional,rotating,98.3

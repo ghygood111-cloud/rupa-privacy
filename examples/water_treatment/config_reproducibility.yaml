@@ -1,0 +1,107 @@
+schema:
+  sensitive_target: operating_cost_index
+  numeric_columns:
+    - raw_inflow_m3d
+    - treated_outflow_m3d
+    - backwash_loss_m3d
+    - sludge_water_m3d
+    - process_feed_m3d
+    - recycle_water_m3d
+    - aeration_energy_kwh
+    - pumping_energy_kwh
+    - total_energy_kwh
+  categorical_columns:
+    - treatment_train
+    - source_water_class
+    - shift_pattern
+  excluded_columns: [plant_day_id, operating_cost_index]
+  released_columns:
+    - raw_inflow_m3d
+    - treated_outflow_m3d
+    - backwash_loss_m3d
+    - sludge_water_m3d
+    - process_feed_m3d
+    - recycle_water_m3d
+    - aeration_energy_kwh
+    - pumping_energy_kwh
+    - total_energy_kwh
+    - treatment_train
+    - source_water_class
+    - shift_pattern
+  public_bounds:
+    raw_inflow_m3d: [12000.0, 150000.0]
+    treated_outflow_m3d: [9000.0, 145000.0]
+    backwash_loss_m3d: [150.0, 12000.0]
+    sludge_water_m3d: [100.0, 7000.0]
+    process_feed_m3d: [10000.0, 175000.0]
+    recycle_water_m3d: [500.0, 28000.0]
+    aeration_energy_kwh: [1800.0, 85000.0]
+    pumping_energy_kwh: [500.0, 22000.0]
+    total_energy_kwh: [2500.0, 105000.0]
+  public_categories:
+    treatment_train: [conventional, membrane, hybrid]
+    source_water_class: [river, reservoir, groundwater, industrial_blend]
+    shift_pattern: [day, rotating, continuous]
+privacy:
+  epsilon_total: 5.0
+  epsilon_numeric: 4.5
+  epsilon_categorical: 0.5
+  delta: 0.00001
+  utility_alpha: 0.6
+  repair_alpha: 0.98
+  randomness_mode: reproducibility
+  random_seed: 20260804
+  calibration_mode: synthetic
+  calibration_source: Independent semi-synthetic water-treatment calibration generator
+  calibration_public_confirmed: false
+  release_data_mode: synthetic
+  release_source: Independent semi-synthetic water-treatment release generator
+  release_public_confirmed: false
+  categorical_mode: randomized_response
+  categorical_budget_strategy: heuristic_risk_utility
+  categorical_risk_smoothing: 0.05
+  nmi_bins: 10
+  joint_bins: 5
+  joint_nmi_diagnostic: true
+  knee_grid_points: 21
+adjacency:
+  type: fixed_roster_replace_one
+  privacy_unit_id: plant_day_id
+  roster_is_public: true
+  one_row_per_unit: true
+privacy_accounting:
+  dataset_id: water_treatment_semisynthetic_repro_2026
+  maximum_cumulative_epsilon: 10.0
+  ledger_path: privacy_ledger_repro.sqlite3
+regulatory_prior:
+  raw_inflow_m3d: 0.09
+  treated_outflow_m3d: 0.12
+  backwash_loss_m3d: 0.07
+  sludge_water_m3d: 0.08
+  process_feed_m3d: 0.09
+  recycle_water_m3d: 0.06
+  aeration_energy_kwh: 0.13
+  pumping_energy_kwh: 0.09
+  total_energy_kwh: 0.14
+  treatment_train: 0.05
+  source_water_class: 0.04
+  shift_pattern: 0.04
+constraints:
+  - name: hydraulic_outflow_balance
+    type: equality
+    provenance: public
+    coefficients: {raw_inflow_m3d: 1.0, treated_outflow_m3d: -1.0, backwash_loss_m3d: -1.0, sludge_water_m3d: -1.0}
+    rhs: 0.0
+    tolerance: 0.01
+  - name: process_feed_balance
+    type: equality
+    provenance: public
+    coefficients: {process_feed_m3d: 1.0, treated_outflow_m3d: -1.0, recycle_water_m3d: -1.0}
+    rhs: 0.0
+    tolerance: 0.01
+  - name: electrical_energy_balance
+    type: equality
+    provenance: public
+    coefficients: {total_energy_kwh: 1.0, aeration_energy_kwh: -1.0, pumping_energy_kwh: -1.0}
+    rhs: 0.0
+    tolerance: 0.01

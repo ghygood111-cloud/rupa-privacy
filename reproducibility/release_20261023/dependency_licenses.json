@@ -1,0 +1,985 @@
+[
+  {
+    "name": "altair",
+    "version": "5.5.0",
+    "license_label": "BSD-3-Clause",
+    "license_file_hashes": [
+      {
+        "file": "altair-5.5.0.dist-info/licenses/LICENSE",
+        "sha256": "14bf5abd0aa392f806fa0bbc88f51de36964d53071a687631e621807e556331e"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "atomicwrites",
+    "version": "1.4.0",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "atomicwrites-1.4.0.dist-info/LICENSE",
+        "sha256": "878329f0bd878ad015129ce8bda82f481e86ec2e80831e909c0d67171d922e73"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "attrs",
+    "version": "21.4.0",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "attrs-21.4.0.dist-info/LICENSE",
+        "sha256": "bf659a28b49240602f56bbdf490cbe2ec509b15b98f99d7b19a52c740e327863"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "blinker",
+    "version": "1.9.0",
+    "license_label": "License :: OSI Approved :: MIT License",
+    "license_file_hashes": [
+      {
+        "file": "blinker-1.9.0.dist-info/LICENSE.txt",
+        "sha256": "9eb73a1f38597a4aa17025d2ae1be3839624c795e985d4f0e9769ce29faca467"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "cachetools",
+    "version": "6.2.6",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "cachetools-6.2.6.dist-info/licenses/LICENSE",
+        "sha256": "28c000b52b0ee27138a68ef778227e4057046e86b65f62f1cacb99b0cc49e0d2"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "certifi",
+    "version": "2026.10.19",
+    "license_label": "MPL-2.0",
+    "license_file_hashes": [
+      {
+        "file": "certifi-2026.10.19.dist-info/licenses/LICENSE",
+        "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "charset-normalizer",
+    "version": "3.5.2",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "charset_normalizer-3.5.2.dist-info/licenses/LICENSE",
+        "sha256": "18577485d3704f1a479ded8e573c0976cfed315fd2fd17983fa988da4c2f70d1"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "click",
+    "version": "8.1.8",
+    "license_label": "BSD-3-Clause",
+    "license_file_hashes": [
+      {
+        "file": "click-8.1.8.dist-info/LICENSE.txt",
+        "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "colorama",
+    "version": "0.4.5",
+    "license_label": "BSD",
+    "license_file_hashes": [
+      {
+        "file": "colorama-0.4.5.dist-info/LICENSE.txt",
+        "sha256": "cac35c02686e5d04a5a7140bfb3b36e73aed496656e891102e428886d7930318"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "contourpy",
+    "version": "1.3.0",
+    "license_label": "BSD 3-Clause License",
+    "license_file_hashes": [
+      {
+        "file": "contourpy-1.3.0.dist-info/LICENSE",
+        "sha256": "85a9aa53d35dff0218d9df56726615f06c13e2a493e3f1407882bc51e5fff758"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "coverage",
+    "version": "7.10.7",
+    "license_label": "Apache-2.0",
+    "license_file_hashes": [
+      {
+        "file": "coverage-7.10.7.dist-info/licenses/LICENSE.txt",
+        "sha256": "eb3d7b5485466acbd81f2b496f595ab637d2792e268206b27d99e793bdb67549"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "cycler",
+    "version": "0.12.1",
+    "license_label": "BSD-3-Clause",
+    "license_file_hashes": [
+      {
+        "file": "cycler-0.12.1.dist-info/LICENSE",
+        "sha256": "f1218143d766da3fea66f13396b7f15df46a83303f29bf96ba6e98eb4d42f408"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "diffprivlib",
+    "version": "0.6.5",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "diffprivlib-0.6.5.dist-info/LICENSE.md",
+        "sha256": "de43617355d435ab321b1cbf4d453627ba13a9d8f3a501060d3ecee7b4af6b29"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "et-xmlfile",
+    "version": "1.1.0",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "et_xmlfile-1.1.0.dist-info/LICENCE.rst",
+        "sha256": "afe62b360cdca81fb8de6ee4b7610da1d86c391777a80c7acb6d11455c53c429"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "fonttools",
+    "version": "4.60.2",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "fonttools-4.60.2.dist-info/licenses/LICENSE",
+        "sha256": "22bef80697ecfaa17f97e62b9a26dfa12820be05583e8dd12ad169b241274c99"
+      },
+      {
+        "file": "fonttools-4.60.2.dist-info/licenses/LICENSE.external",
+        "sha256": "b082a5f86775b2641f01bccb8b9c82908481de5f502bb254b1e13bfc2a9f303d"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "gitdb",
+    "version": "4.0.12",
+    "license_label": "BSD License",
+    "license_file_hashes": [
+      {
+        "file": "gitdb-4.0.12.dist-info/LICENSE",
+        "sha256": "efd29f596a08e8857e68e7694a50bcda72839792da7c3f041bcbff5f18009239"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "GitPython",
+    "version": "3.2.1",
+    "license_label": "BSD-3-Clause",
+    "license_file_hashes": [
+      {
+        "file": "gitpython-3.2.1.dist-info/licenses/LICENSE",
+        "sha256": "86fc94c321a9afbc11514713511bafded225f25100dcc0f7350e82bc231b8beb"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "idna",
+    "version": "3.20",
+    "license_label": "BSD-3-Clause",
+    "license_file_hashes": [
+      {
+        "file": "idna-3.20.dist-info/licenses/LICENSE.md",
+        "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "importlib-metadata",
+    "version": "4.11.3",
+    "license_label": "Apache-2.0",
+    "license_file_hashes": [
+      {
+        "file": "importlib_metadata-4.11.3.dist-info/LICENSE",
+        "sha256": "c0d7ba740721989d55bd507c0fda1373e8071da742b9a48101ebf7eac60433a5"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "importlib_resources",
+    "version": "6.5.2",
+    "license_label": "License :: OSI Approved :: Apache Software License",
+    "license_file_hashes": [
+      {
+        "file": "importlib_resources-6.5.2.dist-info/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "iniconfig",
+    "version": "1.1.1",
+    "license_label": "MIT License",
+    "license_file_hashes": [
+      {
+        "file": "iniconfig-1.1.1.dist-info/LICENSE",
+        "sha256": "2af680c39ef493fb82830356d1d3df1acb5a06033cba2dec7a19e21caa77a866"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "Jinja2",
+    "version": "3.1.6",
+    "license_label": "License :: OSI Approved :: BSD License",
+    "license_file_hashes": [
+      {
+        "file": "jinja2-3.1.6.dist-info/licenses/LICENSE.txt",
+        "sha256": "3b49dcee4105eb37bac10faf1be260408fe85d252b8e9df2e0979fc1e094437b"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "joblib",
+    "version": "1.5.3",
+    "license_label": "BSD-3-Clause",
+    "license_file_hashes": [
+      {
+        "file": "joblib-1.5.3.dist-info/licenses/LICENSE.txt",
+        "sha256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "jsonschema",
+    "version": "4.17.3",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "jsonschema-4.17.3.dist-info/licenses/COPYING",
+        "sha256": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "kiwisolver",
+    "version": "1.4.7",
+    "license_label": "BSD-3-Clause",
+    "license_file_hashes": [
+      {
+        "file": "kiwisolver-1.4.7.dist-info/LICENSE",
+        "sha256": "97b2a3c8db935dc71e89adcde189f6070ea9891ac79b67f1deacf5c3637cb475"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "MarkupSafe",
+    "version": "3.0.4",
+    "license_label": "BSD-3-Clause",
+    "license_file_hashes": [
+      {
+        "file": "markupsafe-3.0.4.dist-info/licenses/LICENSE.txt",
+        "sha256": "4631ec0db5fd90a547e336817264c6798214338146f8ac94b4a57f96ee8c9ec4"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "matplotlib",
+    "version": "3.9.4",
+    "license_label": "Matplotlib (PSF-based) + bundled notices",
+    "license_file_hashes": [
+      {
+        "file": "matplotlib-3.9.4.dist-info/LICENSE",
+        "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+      },
+      {
+        "file": "matplotlib/mpl-data/fonts/ttf/LICENSE_DEJAVU",
+        "sha256": "d75938dec098f06f0ac3c00853065d94f020be1c3c62ef1dc2975ba15b4d9b0e"
+      },
+      {
+        "file": "matplotlib/mpl-data/fonts/ttf/LICENSE_STIX",
+        "sha256": "bab3d31dfef07f483624f2f65f2711e76065b8e7273278b1c071ede1041c9959"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "narwhals",
+    "version": "2.21.0",
+    "license_label": "MIT License",
+    "license_file_hashes": [
+      {
+        "file": "narwhals-2.21.0.dist-info/licenses/LICENSE.md",
+        "sha256": "811445f30147b8f0c9d444c9025fd528f9532c54b7b83f6e2368473dc91cfdf0"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "numpy",
+    "version": "1.26.4",
+    "license_label": "BSD-3-Clause + bundled notices",
+    "license_file_hashes": [
+      {
+        "file": "numpy-1.26.4.dist-info/LICENSE.txt",
+        "sha256": "e261222a74adff28f88160dac1c5cb302d93b67e9ca989eb83bf311e11a9970a"
+      },
+      {
+        "file": "numpy/core/include/numpy/random/LICENSE.txt",
+        "sha256": "d544761558b510866c21f7e8a2d5716fca76e0b98117e3b6b86314db7244d150"
+      },
+      {
+        "file": "numpy/ma/LICENSE",
+        "sha256": "d78dbb208b80d92b4d333e41a4baae50d12444f46e53199fa7726a91de6e2da7"
+      },
+      {
+        "file": "numpy/random/LICENSE.md",
+        "sha256": "b4bc2f4fa1c95778f1ed3dd8f14706bece399475b978f9f34b5d3cd72521b48a"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "openpyxl",
+    "version": "3.0.10",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "openpyxl-3.0.10.dist-info/LICENCE.rst",
+        "sha256": "0c84bb42f5d367e5ebf9fc2dde35b16141df5ee0fdc189250858bc6c5560f69e"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "packaging",
+    "version": "21.3",
+    "license_label": "BSD-2-Clause or Apache-2.0",
+    "license_file_hashes": [
+      {
+        "file": "packaging-21.3.dist-info/LICENSE",
+        "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+      },
+      {
+        "file": "packaging-21.3.dist-info/LICENSE.APACHE",
+        "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+      },
+      {
+        "file": "packaging-21.3.dist-info/LICENSE.BSD",
+        "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "pandas",
+    "version": "1.4.4",
+    "license_label": "BSD-3-Clause",
+    "license_file_hashes": [
+      {
+        "file": "pandas-1.4.4.dist-info/LICENSE",
+        "sha256": "97d812f1fda16e9a65fb6baa29390707c94df08d9816a282ad2c03c48c180390"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "pillow",
+    "version": "11.3.0",
+    "license_label": "MIT-CMU",
+    "license_file_hashes": [
+      {
+        "file": "pillow-11.3.0.dist-info/licenses/LICENSE",
+        "sha256": "19544bf53af689a3319a4fb5067370f0f0d68d2c5300a2157674f5ef8a4fd965"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "pip",
+    "version": "26.0.1",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "pip-26.0.1.dist-info/licenses/LICENSE.txt",
+        "sha256": "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/cachecontrol/LICENSE.txt",
+        "sha256": "86eeee87be2a43f3ff1f56496f451f69243926f025fedbb033666c304c4c161b"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/certifi/LICENSE",
+        "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/dependency_groups/LICENSE.txt",
+        "sha256": "1ab36e3e2a4ba8631625384f87e9e091db1faed034c5b23325b3239abf2cc525"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/distlib/LICENSE.txt",
+        "sha256": "808e10c8a6ab8deb149ff9b3fb19f447a808094606d712a9ca57fead3552599d"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/distro/LICENSE",
+        "sha256": "cb5e8e7e5f4a3988e1063c142c60dc2df75605f4c46515e776e3aca6df976e14"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
+        "sha256": "b7a336abf3b04e180ec065cdd16e705d079e1cc7a14f910aa6e9187f36b9cd87"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/msgpack/COPYING",
+        "sha256": "492dedba85da5872f78e6091bcd1fea474d660d35acb4dee964b8aab3f007427"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/packaging/LICENSE",
+        "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.APACHE",
+        "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.BSD",
+        "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/pkg_resources/LICENSE",
+        "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/platformdirs/LICENSE",
+        "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/pygments/LICENSE",
+        "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/pyproject_hooks/LICENSE",
+        "sha256": "1b22b049b5267d6dfc23a67bf4a84d8ec04b9fdfb1a51d360e42b4342c8b4154"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/requests/LICENSE",
+        "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/resolvelib/LICENSE",
+        "sha256": "f388fd38cad13112c1dc0f669bbe80e7f84541edbafb72f3030d2ca7642c3c9d"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/rich/LICENSE",
+        "sha256": "deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/tomli/LICENSE",
+        "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/tomli_w/LICENSE",
+        "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/truststore/LICENSE",
+        "sha256": "33be7b7e8fa4fd19b1760e1a8ed8a668bdab852c91b692dd41424bcb725a9fca"
+      },
+      {
+        "file": "pip-26.0.1.dist-info/licenses/src/pip/_vendor/urllib3/LICENSE.txt",
+        "sha256": "c37bf186e27cf9dbe9619e55edfe3cea7b30091ceb3da63c7dacbe0e6d77907b"
+      },
+      {
+        "file": "pip/_vendor/cachecontrol/LICENSE.txt",
+        "sha256": "86eeee87be2a43f3ff1f56496f451f69243926f025fedbb033666c304c4c161b"
+      },
+      {
+        "file": "pip/_vendor/certifi/LICENSE",
+        "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+      },
+      {
+        "file": "pip/_vendor/dependency_groups/LICENSE.txt",
+        "sha256": "1ab36e3e2a4ba8631625384f87e9e091db1faed034c5b23325b3239abf2cc525"
+      },
+      {
+        "file": "pip/_vendor/distlib/LICENSE.txt",
+        "sha256": "808e10c8a6ab8deb149ff9b3fb19f447a808094606d712a9ca57fead3552599d"
+      },
+      {
+        "file": "pip/_vendor/distro/LICENSE",
+        "sha256": "cb5e8e7e5f4a3988e1063c142c60dc2df75605f4c46515e776e3aca6df976e14"
+      },
+      {
+        "file": "pip/_vendor/idna/LICENSE.md",
+        "sha256": "b7a336abf3b04e180ec065cdd16e705d079e1cc7a14f910aa6e9187f36b9cd87"
+      },
+      {
+        "file": "pip/_vendor/msgpack/COPYING",
+        "sha256": "492dedba85da5872f78e6091bcd1fea474d660d35acb4dee964b8aab3f007427"
+      },
+      {
+        "file": "pip/_vendor/packaging/LICENSE",
+        "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+      },
+      {
+        "file": "pip/_vendor/packaging/LICENSE.APACHE",
+        "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+      },
+      {
+        "file": "pip/_vendor/packaging/LICENSE.BSD",
+        "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+      },
+      {
+        "file": "pip/_vendor/pkg_resources/LICENSE",
+        "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+      },
+      {
+        "file": "pip/_vendor/platformdirs/LICENSE",
+        "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6"
+      },
+      {
+        "file": "pip/_vendor/pygments/LICENSE",
+        "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+      },
+      {
+        "file": "pip/_vendor/pyproject_hooks/LICENSE",
+        "sha256": "1b22b049b5267d6dfc23a67bf4a84d8ec04b9fdfb1a51d360e42b4342c8b4154"
+      },
+      {
+        "file": "pip/_vendor/requests/LICENSE",
+        "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+      },
+      {
+        "file": "pip/_vendor/resolvelib/LICENSE",
+        "sha256": "f388fd38cad13112c1dc0f669bbe80e7f84541edbafb72f3030d2ca7642c3c9d"
+      },
+      {
+        "file": "pip/_vendor/rich/LICENSE",
+        "sha256": "deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15"
+      },
+      {
+        "file": "pip/_vendor/tomli/LICENSE",
+        "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+      },
+      {
+        "file": "pip/_vendor/tomli_w/LICENSE",
+        "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+      },
+      {
+        "file": "pip/_vendor/truststore/LICENSE",
+        "sha256": "33be7b7e8fa4fd19b1760e1a8ed8a668bdab852c91b692dd41424bcb725a9fca"
+      },
+      {
+        "file": "pip/_vendor/urllib3/LICENSE.txt",
+        "sha256": "c37bf186e27cf9dbe9619e55edfe3cea7b30091ceb3da63c7dacbe0e6d77907b"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "pluggy",
+    "version": "1.0.0",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "pluggy-1.0.0.dist-info/LICENSE",
+        "sha256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "protobuf",
+    "version": "6.33.6",
+    "license_label": "3-Clause BSD License",
+    "license_file_hashes": [
+      {
+        "file": "protobuf-6.33.6.dist-info/LICENSE",
+        "sha256": "6e5e117324afd944dcf67f36cf329843bc1a92229a8cd9bb573d7a83130fea7d"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "py",
+    "version": "1.11.0",
+    "license_label": "MIT license",
+    "license_file_hashes": [
+      {
+        "file": "py-1.11.0.dist-info/LICENSE",
+        "sha256": "2af680c39ef493fb82830356d1d3df1acb5a06033cba2dec7a19e21caa77a866"
+      },
+      {
+        "file": "py/_vendored_packages/apipkg-2.0.0.dist-info/LICENSE",
+        "sha256": "e89eed1074d3a943198ba139b80844f5b445b860bba74a8aeadc0610566164ea"
+      },
+      {
+        "file": "py/_vendored_packages/iniconfig-1.1.1.dist-info/LICENSE",
+        "sha256": "2af680c39ef493fb82830356d1d3df1acb5a06033cba2dec7a19e21caa77a866"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "pyarrow",
+    "version": "21.0.0",
+    "license_label": "Apache Software License",
+    "license_file_hashes": [
+      {
+        "file": "pyarrow-21.0.0.dist-info/LICENSE.txt",
+        "sha256": "320b8dc52e80ae89e76a5b5b246cb5c27423483363d82479b9c59c784ad1b6fe"
+      },
+      {
+        "file": "pyarrow-21.0.0.dist-info/NOTICE.txt",
+        "sha256": "7e0ade1097757e73899270990230098ca2668701bb7b62831956b5cbbc612033"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "pydeck",
+    "version": "0.9.3",
+    "license_label": "Apache License 2.0",
+    "license_file_hashes": [
+      {
+        "file": "pydeck-0.9.3.dist-info/licenses/LICENSE.txt",
+        "sha256": "fa22bc5599b857a628e0757d4a95024f4c392aa2a4321053d61f34ce505d6d90"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "pyparsing",
+    "version": "3.3.3",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "pyparsing-3.3.3.dist-info/licenses/LICENSE",
+        "sha256": "a5425f9dc14ac74d4c5f0b679e941f2442e32cca7452a4418d5b1a49893ebe4e"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "pyrsistent",
+    "version": "0.20.0",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "pyrsistent-0.20.0.dist-info/LICENSE.mit",
+        "sha256": "a59630343e26a7f1b8a40b76de21ecd89d00aa7dee85833658b889194f20c79d"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "pytest",
+    "version": "7.1.2",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "pytest-7.1.2.dist-info/LICENSE",
+        "sha256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "pytest-cov",
+    "version": "4.1.0",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "pytest_cov-4.1.0.dist-info/LICENSE",
+        "sha256": "835586ae156766a24e3c103fbc55d9af6b1a16df57ca932c97482a2737fd83d5"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "python-dateutil",
+    "version": "2.8.2",
+    "license_label": "Dual License",
+    "license_file_hashes": [
+      {
+        "file": "python_dateutil-2.8.2.dist-info/LICENSE",
+        "sha256": "ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "pytz",
+    "version": "2022.1",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "pytz-2022.1.dist-info/LICENSE.txt",
+        "sha256": "be8b1a37ebe26c592a90f6c0eb33103a7f383ce2f4d7498c0af9a526990a07b8"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "PyYAML",
+    "version": "6.0",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "PyYAML-6.0.dist-info/LICENSE",
+        "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "requests",
+    "version": "2.32.5",
+    "license_label": "Apache-2.0",
+    "license_file_hashes": [
+      {
+        "file": "requests-2.32.5.dist-info/licenses/LICENSE",
+        "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "rupa-privacy",
+    "version": "0.1.0",
+    "license_label": "BSD-3-Clause",
+    "license_file_hashes": [
+      {
+        "file": "rupa_privacy-0.1.0.dist-info/licenses/LICENSE",
+        "sha256": "437a4b7ca0a5f381a949ed2b8035e9f5ee3e0aafd518291ea43820d6daa4e2c9"
+      }
+    ],
+    "distribution_note": "Project BSD-3-Clause source"
+  },
+  {
+    "name": "scikit-learn",
+    "version": "1.6.1",
+    "license_label": "BSD 3-Clause License",
+    "license_file_hashes": [
+      {
+        "file": "scikit_learn-1.6.1.dist-info/COPYING",
+        "sha256": "1b74e02d0cb8e6502091124787fc91695b9dd92c9cb146d9d34830f9a300ab3c"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "scipy",
+    "version": "1.13.1",
+    "license_label": "BSD-3-Clause + bundled notices",
+    "license_file_hashes": [
+      {
+        "file": "scipy-1.13.1.dist-info/LICENSE.txt",
+        "sha256": "52590289e7b452fbfd949dacf50e2813e3612abb7c116e5c7a0c27a496b9c5ef"
+      },
+      {
+        "file": "scipy/_lib/_uarray/LICENSE",
+        "sha256": "e4c4acc31e8287066d7c995d26e3ef902ca1977ee187b260b11c278366503811"
+      },
+      {
+        "file": "scipy/fft/_pocketfft/LICENSE.md",
+        "sha256": "c04661685cff9d8035fe1c4c3ab357e7f7633cafc06a73e9d90c3c5fede8a86a"
+      },
+      {
+        "file": "scipy/sparse/linalg/_eigen/arpack/COPYING",
+        "sha256": "fcb3c6c7de1460cf7d0863c3c5996e518eb8015a2eced36911f3da178440b3df"
+      },
+      {
+        "file": "scipy/spatial/qhull_src/COPYING.txt",
+        "sha256": "962452e737df7c743a3dc2744232071028b8c0450e7674a55057c330ea1977eb"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "setuptools",
+    "version": "58.1.0",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "setuptools-58.1.0.dist-info/LICENSE",
+        "sha256": "db3f0246b1f9278f15845b99fec478b8b506eb76487993722f8c6e254285faf8"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "six",
+    "version": "1.16.0",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "six-1.16.0.dist-info/LICENSE",
+        "sha256": "8bb850c565aa389fdc16f3a46965ad23d82adff60f2393fc2762b63185e8e6c9"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "smmap",
+    "version": "5.0.3",
+    "license_label": "BSD-3-Clause",
+    "license_file_hashes": [
+      {
+        "file": "smmap-5.0.3.dist-info/licenses/LICENSE",
+        "sha256": "88e9d93f708d110b328a834302dd1d5c6afbda530e7721d15d80b3511d86f235"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "streamlit",
+    "version": "1.50.0",
+    "license_label": "Apache License 2.0",
+    "license_file_hashes": [],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "tenacity",
+    "version": "9.1.2",
+    "license_label": "Apache 2.0",
+    "license_file_hashes": [
+      {
+        "file": "tenacity-9.1.2.dist-info/licenses/LICENSE",
+        "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "threadpoolctl",
+    "version": "3.6.0",
+    "license_label": "BSD-3-Clause",
+    "license_file_hashes": [
+      {
+        "file": "threadpoolctl-3.6.0.dist-info/licenses/LICENSE",
+        "sha256": "81ac619075248b06e53660b652d10e485f4675f5d0ae0f97ea22370da1f7e23b"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "toml",
+    "version": "0.10.2",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "toml-0.10.2.dist-info/LICENSE",
+        "sha256": "2d9294823df6c89357c8be4927fce79361d6561e5ee7532d5926e63939aaa536"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "tomli",
+    "version": "2.0.1",
+    "license_label": "License :: OSI Approved :: MIT License",
+    "license_file_hashes": [
+      {
+        "file": "tomli-2.0.1.dist-info/LICENSE",
+        "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "tornado",
+    "version": "6.5.10",
+    "license_label": "Apache-2.0",
+    "license_file_hashes": [
+      {
+        "file": "tornado-6.5.10.dist-info/licenses/LICENSE",
+        "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "license_label": "PSF-2.0",
+    "license_file_hashes": [
+      {
+        "file": "typing_extensions-4.16.0.dist-info/licenses/LICENSE",
+        "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "urllib3",
+    "version": "2.6.3",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "urllib3-2.6.3.dist-info/licenses/LICENSE.txt",
+        "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "watchdog",
+    "version": "6.0.0",
+    "license_label": "Apache-2.0",
+    "license_file_hashes": [
+      {
+        "file": "watchdog-6.0.0.dist-info/COPYING",
+        "sha256": "39f081828db6f94c70123fa4fb30c1bce3e215a8fdece53a49991fe076a69c08"
+      },
+      {
+        "file": "watchdog-6.0.0.dist-info/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  },
+  {
+    "name": "zipp",
+    "version": "3.8.0",
+    "license_label": "MIT",
+    "license_file_hashes": [
+      {
+        "file": "zipp-3.8.0.dist-info/LICENSE",
+        "sha256": "db3f0246b1f9278f15845b99fec478b8b506eb76487993722f8c6e254285faf8"
+      }
+    ],
+    "distribution_note": "Separately installed; not vendored in the RUPA wheel"
+  }
+]

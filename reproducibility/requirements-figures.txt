@@ -1,0 +1,2 @@
+# Optional publication plotting only; not a core RUPA dependency.
+matplotlib>=3.7,<3.10

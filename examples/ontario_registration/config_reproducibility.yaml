@@ -1,0 +1,53 @@
+schema:
+  sensitive_target: registered_class_count
+  numeric_columns: []
+  categorical_columns: &id001
+  - handles_liquid
+  - handles_solid
+  excluded_columns:
+  - public_registration_id
+  - registered_class_count
+  released_columns: *id001
+  public_bounds: {}
+  public_categories:
+    handles_liquid:
+    - 'no'
+    - 'yes'
+    handles_solid:
+    - 'no'
+    - 'yes'
+privacy:
+  epsilon_total: 2.0
+  epsilon_numeric: 0.0
+  epsilon_categorical: 2.0
+  delta: 1.0e-05
+  utility_alpha: 0.6
+  repair_alpha: 0.0
+  randomness_mode: reproducibility
+  random_seed: 20262000
+  calibration_mode: public
+  calibration_public_confirmed: true
+  calibration_source: Public Ontario historical registration partition; provenance.json
+  release_data_mode: public_demonstration
+  release_public_confirmed: true
+  release_source: Public Ontario historical registration partition; provenance.json
+  categorical_mode: randomized_response
+  categorical_budget_strategy: uniform
+  categorical_risk_smoothing: 0.05
+  nmi_bins: 10
+  joint_bins: 5
+  joint_nmi_diagnostic: false
+  knee_grid_points: 21
+regulatory_prior:
+  handles_liquid: 0.5
+  handles_solid: 0.5
+constraints: []
+adjacency:
+  type: fixed_roster_replace_one
+  privacy_unit_id: public_registration_id
+  roster_is_public: true
+  one_row_per_unit: true
+privacy_accounting:
+  dataset_id: ontario_public_registration_coverage_2002_2022
+  maximum_cumulative_epsilon: 10.0
+  ledger_path: privacy_ledger.sqlite3

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RUPA 0.1.0 使用说明</title>
+<style>body{font-family:system-ui,"Microsoft YaHei",sans-serif;color:#243442;background:#f6f8fa;margin:0;line-height:1.8}main{max-width:860px;margin:auto;padding:40px 24px}h1{font-size:30px;color:#174a7e}h2{font-size:20px;border-bottom:1px solid #d8e1ea;padding-bottom:8px}code{background:#e9eef2;padding:2px 5px}li{margin:10px 0}.notice{border-left:4px solid #bf7d1e;padding:12px 16px;background:#fff5e5}a{color:#174a7e}</style></head>
+<body><main><h1>RUPA 0.1.0</h1><p>Risk-Utility Privacy Allocation<br>本地科研数据隐私发布软件 · 复现模式</p>
+<h2>第一次使用</h2><ol><li>先解压整个压缩包。保留 <code>RUPA.exe</code> 与 <code>_internal</code> 在同一文件夹。</li>
+<li>双击 <code>RUPA.exe</code>，稍等默认浏览器自动打开。</li>
+<li>点击 <strong>Load official synthetic example</strong>，加载内置合成示例。</li>
+<li>左侧 <strong>Validation</strong> → <strong>Run validation</strong>，确认通过。</li>
+<li>左侧 <strong>Run</strong> → <strong>Run RUPA</strong>，等待运行完成。</li>
+<li><strong>Analysis</strong> 查看 Risk、Utility、Epsilon Allocation、Released Data、Constraint Residuals。</li>
+<li><strong>Export</strong> 下载最终发布 CSV 或完整公开运行包。</li></ol>
+<p>首页也可加载 <strong>Hazardous-waste synthetic example</strong>，查看企业年度危废合成数据的 18 个拟发布字段及被排除的企业标识、地址和联系信息。该案例不包含信息中心真实记录，不能用于正式联单业务。</p>
+<h2>软件做什么</h2><p>软件在公开固定主体名单的数据契约下，读取独立校准集与待发布数据，按配置确定字段风险、效用和预算，执行数值/类别扰动及公开线性约束后处理，最后生成可核查的公开发布产物。</p>
+<p><code>release_data.csv</code> 才是最终发布数据。校准数据不是发布结果；风险分数不是攻击成功率；效用权重不是实测准确率；约束残差下降不代表最终数据严格满足所有物理关系。</p>
+<div class="notice">此 Windows 版仅用于公开或合成数据的科研复现演示。不要输入真实保密数据，不提供 production 发布入口，不构成监管合规或独立隐私认证。作者与开源授权仍待确认。</div>
+<h2>结果和日志</h2><p>结果保存到当前用户 <code>%LOCALAPPDATA%\RUPA\runs</code>；启动日志为 <code>%LOCALAPPDATA%\RUPA\logs\startup.log</code>。无需操作 <code>_internal</code>。</p>
+<h2>Notes</h2><p>本地工作流程无需联网。RUPA 只在当前电脑的 localhost 上运行，本评估版仅使用复现模式。请勿重命名或删除 <code>_internal</code>。</p>
+<h2>无法打开时</h2><p>端口被占用时软件自动选择其他可用端口。启动失败会显示日志位置。不要删除依赖目录，不要从压缩包内直接运行 EXE。</p>
+<p>关闭浏览器并不结束后台服务。使用结束后可在 Windows 任务管理器中结束 <strong>RUPA.exe</strong>。软件未签名；不要绕过系统安全警告，必要时请学校 IT 核验来源和文件 SHA-256。</p>
+</main></body></html>

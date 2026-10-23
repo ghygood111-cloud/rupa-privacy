@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><title>RUPA 试用说明</title>
+<style>body{font:16px/1.8 'Microsoft YaHei',sans-serif;max-width:900px;margin:40px auto;padding:0 24px;color:#24303c}h1,h2{color:#174a7e}code{background:#eef2f6;padding:2px 5px}li{margin:9px 0}strong{color:#8b3b18}</style>
+<h1>RUPA 科研软件试用说明</h1>
+<p>双视图研究更新版，2026年10月22日。请先完整解压整个压缩包，再双击 <code>RUPA.exe</code>。不要只取出 EXE，旁边的 <code>_internal</code> 文件夹必须保留。</p>
+<p>软件在本机启动服务并打开浏览器，仅监听 <code>127.0.0.1</code>。程序会选择可用端口，实际地址以启动时打开的页面为准。网页不是远程网站，不需要注册或登录。关闭标签页不会自动停止后台程序。</p>
+<h2>体验原参考流程</h2><ol>
+<li>首页点击 <code>Load official synthetic example</code>，也可以选择危废或水处理合成示例。</li>
+<li>左侧 <code>04 Validation</code> → <code>Run validation</code>。成功后自动进入 Run。</li>
+<li>点击 <code>Run RUPA</code>。成功后自动进入 Analysis。</li>
+<li>查看预算、受保护数据及约束残差，点击底部 <code>Continue to Export</code> 下载参考流程的结果。</li>
+</ol>
+<h2>体验新双视图研究方法</h2><ol>
+<li>先在首页加载一个合成案例，再点击左侧 <code>08 Research</code>。</li>
+<li>选择 <code>Task-directed + risk cap</code>，点击 <code>Run two-view research</code>。它会实际验证输入并运行新方法。</li>
+<li>页面显示总预算如何分为逐行、总量和类别三部分，三部分之和仍为总 epsilon。</li>
+<li>查看本页的 Research result、分字段预算和重建前后残差；本模式结果不放在原流程的 Analysis 页。</li>
+<li>点击 <code>Download research CSV</code> 下载最终表，或 <code>Download research package</code> 下载带清单的研究结果包。</li>
+<li>选择 <code>Uniform comparator</code> 并重新运行，可体验相同双视图方法内的均匀总量预算方案；它不是原逐行流程。</li>
+</ol>
+<p>Downloaded files are saved by your web browser according to its normal download settings, typically in the Windows Downloads folder. 软件不会猜测或强制设置浏览器下载目录。</p>
+<h2>如何理解结果</h2>
+<p>该方法用受保护总量引导行表重建，以缓解旧逐行流程的总量偏差。准确总量不等于恢复每条原始记录；方差、相关性和部分误差指标仍可能变差。单次演示也不能证明某种预算总是优于另一种预算。论文中的多样本、配对种子实验与本机单次演示分开报告。</p>
+<p><strong>本版为科研评估界面，不是保密生产发布工具。</strong>双视图模式拒绝生产、保密发布及秘密校准输入，不替代 CLI 隐私账本，不提供合规或独立安全认证。自带案例均为合成数据。原参考流程保持可用。</p>
+<h2>排错与限制</h2>
+<p>启动日志位于 <code>%LOCALAPPDATA%\RUPA\logs\startup.log</code>；实际地址记录在 <code>last_startup.json</code>。结果保存在 <code>%LOCALAPPDATA%\RUPA\runs</code>。程序未数字签名；如安全软件提示，请先核验来源和 SHA-256 并由本机管理人员判断，不要关闭系统安全保护。本机已执行启动、计算和导出核验，但尚未在无 Python 的独立干净电脑或 Sandbox 中验证。</p>
+<p>代码权属、正式开源许可证和永久发布链接仍待作者确认；此包仅供授权科研评估，不能作为已取得正式开源许可或期刊录用的证据。</p>
+</html>

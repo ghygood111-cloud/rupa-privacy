@@ -1,0 +1,38 @@
+{
+  "frozen_before_new_results": true,
+  "purpose": "Reviewer-requested task utility and sample-size diagnostics; no core algorithm changes",
+  "numeric": {
+    "example": "examples/hazardous_waste",
+    "epsilon_total": [1, 5, 20],
+    "numeric_budget_fraction": 0.86,
+    "categorical_budget_strategy_for_all_methods": "uniform",
+    "allocation": ["uniform", "rupa"],
+    "postprocessing_alpha": [0, 0.98],
+    "seeds": {"first": 20262100, "count": 30},
+    "boundary_diagnostic": {"public_width_multiplier": 2, "epsilon_total": 5},
+    "external_mechanism": "diffprivlib.mechanisms.Laplace 0.6.6; numerical uniform allocation; same clipped input, public bounds and postprocessing; categorical outputs supplied by unchanged RUPA GRR",
+    "primary_metric": "median over numerical fields of absolute total relative error, percent",
+    "secondary_metrics": ["cross-region share absolute error in percentage points", "range-normalized MAE", "range-normalized Wasserstein", "KS", "stage NRMS", "violation rate", "boundary saturation"],
+    "comparison": "paired seeds for RUPA-component methods; external sampler has different random draws; bootstrap CI of paired mean differences is descriptive, no allocation-superiority claim"
+  },
+  "sample_size": {
+    "example": "examples/ontario_registration",
+    "sizes": [100, 500, 2000, 10000, 92066],
+    "epsilon_total": [1, 2, 5],
+    "allocation": "uniform",
+    "subset_rule": "nested prefix after SHA256(public_registration_id + fixed salt) sorting; calibration unchanged",
+    "seeds": {"first": 20262200, "count": 30},
+    "primary_metric": "maximum of the two marginal absolute coverage errors after public GRR decoding, percentage points",
+    "estimator": "unclipped inverse GRR; out-of-range estimates retained and reported",
+    "scope": "two binary attributes only; no high-cardinality or confidential deployment claim"
+  },
+  "safety": {
+    "randomness_mode": "reproducibility",
+    "confidential_inputs": "refused",
+    "raw_rows_exported_by_evaluation": false,
+    "all_failures_retained": true,
+    "fresh_full_pytest_required": true,
+    "output_directory_must_not_exist": true,
+    "no_private_data_bound_tuning": true
+  }
+}

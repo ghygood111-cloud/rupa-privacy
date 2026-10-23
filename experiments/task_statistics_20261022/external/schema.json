@@ -1,0 +1,50 @@
+{
+  "fields": [
+    "cement_kg_m3",
+    "slag_kg_m3",
+    "fly_ash_kg_m3",
+    "water_kg_m3",
+    "superplasticizer_kg_m3",
+    "coarse_aggregate_kg_m3",
+    "fine_aggregate_kg_m3",
+    "age_days"
+  ],
+  "public_bounds": {
+    "cement_kg_m3": [
+      0,
+      1000
+    ],
+    "slag_kg_m3": [
+      0,
+      1000
+    ],
+    "fly_ash_kg_m3": [
+      0,
+      1000
+    ],
+    "water_kg_m3": [
+      0,
+      500
+    ],
+    "superplasticizer_kg_m3": [
+      0,
+      100
+    ],
+    "coarse_aggregate_kg_m3": [
+      0,
+      2000
+    ],
+    "fine_aggregate_kg_m3": [
+      0,
+      2000
+    ],
+    "age_days": [
+      1,
+      365
+    ]
+  },
+  "bounds_source": "Analyst-declared broad benchmark assumptions frozen before numeric evaluation; age interval also documented by UCI. Not regulatory limits or bounds inferred from private release data.",
+  "units": "Ingredient kg per cubic metre, age days; protected task is mean recipe parameters, not total material tonnage or company records.",
+  "constraints": [],
+  "target": "compressive_strength_mpa"
+}

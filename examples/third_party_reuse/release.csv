@@ -1,0 +1,11 @@
+unit_id,inflow_m3d,treated_outflow_m3d,process_loss_m3d,total_energy_kwh,plant_type,shift
+release_001,86,80,6,1320,conventional,day
+release_002,101,94,7,1580,membrane,night
+release_003,116,107,9,1810,conventional,rotating
+release_004,131,122,9,2030,membrane,day
+release_005,143,133,10,2240,conventional,night
+release_006,157,145,12,2460,membrane,rotating
+release_007,171,158,13,2690,conventional,day
+release_008,184,169,15,2950,membrane,night
+release_009,93,87,6,1450,membrane,rotating
+release_010,121,112,9,1880,conventional,night
