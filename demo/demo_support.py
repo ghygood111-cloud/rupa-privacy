@@ -9,7 +9,7 @@ import time
 import zipfile
 from copy import deepcopy
 from dataclasses import dataclass
-from pathlib import Path
+from pathlib import Path, PureWindowsPath
 from typing import Callable, Dict, Iterable, List, Mapping, Optional, Tuple
 
 import numpy as np
@@ -613,13 +613,13 @@ def reproduction_commands(
         (release_name, "release.csv"),
         (config_name, "config.yaml"),
     ):
-        candidate = Path(str(name)).name
+        candidate = PureWindowsPath(str(name)).name
         safe_names.append(candidate if candidate not in {"", "."} else fallback)
     return (
         "rupa-privacy validate --calibration {0} --release {1} --config {2}\n"
         "rupa-privacy run --calibration {0} --release {1} --config {2} "
         "--output runs --run-id {3}"
-    ).format(safe_names[0], safe_names[1], safe_names[2], Path(str(run_id)).name)
+    ).format(safe_names[0], safe_names[1], safe_names[2], PureWindowsPath(str(run_id)).name)
 
 
 def resolve_ledger_path(config_path: Optional[Path], configured_path: str) -> Path:

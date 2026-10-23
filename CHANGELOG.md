@@ -4,6 +4,23 @@ All notable changes to the RUPA research software are recorded here.
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-10-23
+
+### Fixed
+
+- GUI reproduction-command recipes remove Windows, UNC and POSIX directory
+  prefixes identically on every host, including the displayed run ID.
+- Added cross-platform path-redaction regression cases. The v0.1.0 hosted Linux
+  test failure remains part of its unchanged historical release record.
+
+### Provenance
+
+- Only GUI command presentation, regression tests and version/release metadata
+  changed. No scientific computation or privacy accounting changed.
+- The paper's v0.1.0 core hash inventory is retained. A separately declared
+  version.py-only metadata hash identifies this patch without relabeling it as
+  byte-identical to v0.1.0. All other 38 core Python files remain identical.
+
 ## [0.1.0] - 2026-10-23
 
 ### Added

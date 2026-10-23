@@ -417,12 +417,31 @@ def test_gui_validation_rejects_production_mode():
         validate_demo(config, example["calibration"], example["release"])
 
 
-def test_reproduction_command_does_not_embed_absolute_paths():
+@pytest.mark.parametrize("directory", [
+    "C:\\private\\",
+    "C:/private/",
+    "\\\\server\\private\\",
+    "/private/",
+    "relative/private/",
+])
+def test_reproduction_command_does_not_embed_absolute_paths(directory):
     command = reproduction_commands(
-        r"C:\private\calibration.csv",
-        r"C:\private\release.csv",
-        r"C:\private\config.yaml",
-        "reproduced_run",
+        directory + "calibration.csv",
+        directory + "release.csv",
+        directory + "config.yaml",
+        directory + "reproduced_run",
     )
     assert "C:\\private" not in command
+    assert "private" not in command
+    assert "server" not in command
     assert "calibration.csv" in command
+    assert "release.csv" in command
+    assert "config.yaml" in command
+    assert "--run-id reproduced_run" in command
+
+
+def test_reproduction_command_empty_names_use_documented_defaults():
+    command = reproduction_commands("", ".", "")
+    assert "--calibration calibration.csv" in command
+    assert "--release release.csv" in command
+    assert "--config config.yaml" in command

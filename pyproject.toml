@@ -40,7 +40,7 @@ test = ["pytest>=7,<9", "pytest-cov>=4,<7"]
 
 [project.urls]
 Repository = "https://github.com/ghygood111-cloud/rupa-privacy"
-Documentation = "https://github.com/ghygood111-cloud/rupa-privacy/blob/v0.1.0/docs/index.md"
+Documentation = "https://github.com/ghygood111-cloud/rupa-privacy/blob/v0.1.1/docs/index.md"
 Issues = "https://github.com/ghygood111-cloud/rupa-privacy/issues"
 Releases = "https://github.com/ghygood111-cloud/rupa-privacy/releases"
 

@@ -1,6 +1,13 @@
 {
   "version": "0.1.0",
   "paper_snapshot": "Chinese technical manuscript 20261022",
+  "release_metadata": {
+    "version": "0.1.1",
+    "reason": "GUI path-redaction patch; only version.py differs in the core package, without scientific computation changes",
+    "overrides": {
+      "src/rupa_privacy/version.py": "4f94bfd8a6c8e0dcdd4448e078b76c1b546de1c56dfbe5f58ed66234c2c829e6"
+    }
+  },
   "core_sha256": {
     "src/rupa_privacy/__init__.py": "88a565a8cda304f84371f122688dfc7d267c7709af41ea9c1fe186d4b3364292",
     "src/rupa_privacy/__main__.py": "8b551ba37f77a56da84b915b9754e5c6b32d189ac1593c4cd5c62134d40936d1",

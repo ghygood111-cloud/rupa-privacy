@@ -5,11 +5,17 @@ tabular data release. RUPA connects an explicit input contract, independent
 calibration, field budgets, established DP mechanisms, public linear-constraint
 processing and controlled output files through one Python core.
 
-**Version:** 0.1.0. **Code license:** [BSD-3-Clause](LICENSE).
+**Version:** 0.1.1. **Code license:** [BSD-3-Clause](LICENSE).
 Repository: [ghygood111-cloud/rupa-privacy](https://github.com/ghygood111-cloud/rupa-privacy).
-See [version 0.1.0](https://github.com/ghygood111-cloud/rupa-privacy/releases/tag/v0.1.0)
+See [version 0.1.1](https://github.com/ghygood111-cloud/rupa-privacy/releases/tag/v0.1.1)
 for installation artifacts and the release verification record. The software is
 not an independent privacy-security certification. No archival DOI is assigned.
+
+Version 0.1.1 fixes cross-platform directory redaction in the GUI's displayed
+reproduction commands. It does not change scientific computation. The paper's
+experimental version remains [0.1.0](https://github.com/ghygood111-cloud/rupa-privacy/releases/tag/v0.1.0),
+whose tag and artifacts are unchanged. The provenance check separately identifies
+the version.py metadata difference rather than claiming full byte identity.
 
 ## Scope and release tasks
 
@@ -75,7 +81,7 @@ Download the versioned source archive from the release page, or check out the
 versioned source before installing:
 
 ```powershell
-git clone --branch v0.1.0 https://github.com/ghygood111-cloud/rupa-privacy.git
+git clone --branch v0.1.1 https://github.com/ghygood111-cloud/rupa-privacy.git
 cd rupa-privacy
 ```
 
